@@ -1,0 +1,51 @@
+{
+  "name": "@robot-inventor/eslint-config",
+  "version": "0.1.0",
+  "description": "My ESLint config preset",
+  "main": "dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsc -p . && tsc -p ./tsconfig.cjs.json && tsconfig-to-dual-package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Robot-Inventor/eslint-config.git"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Robot-Inventor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Robot-Inventor/eslint-config/issues"
+  },
+  "homepage": "https://github.com/Robot-Inventor/eslint-config#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsdoc": "^48.2.3",
+    "typescript-eslint": "^7.6.0"
+  },
+  "devDependencies": {
+    "tsconfig-to-dual-package": "^1.2.0",
+    "typescript": "^5.4.4"
+  }
+}
