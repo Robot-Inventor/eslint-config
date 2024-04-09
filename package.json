@@ -18,7 +18,8 @@
     }
   },
   "scripts": {
-    "build": "tsc -p . && tsc -p ./tsconfig.cjs.json && tsconfig-to-dual-package"
+    "build": "tsc -p . && tsc -p ./tsconfig.cjs.json && tsconfig-to-dual-package",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
