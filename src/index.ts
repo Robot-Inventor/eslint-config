@@ -11,9 +11,7 @@ const eslintConfigNoJSDoc = tseslint.config(
     {
         languageOptions: {
             parserOptions: {
-                project: true,
-                // @ts-expect-error
-                tsconfigRootDir: import.meta.dirname
+                project: true
             }
         },
         plugins: {
