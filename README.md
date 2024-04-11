@@ -1,6 +1,6 @@
 # eslint-config
 
-[@Robot-Inventor](https://github.com/Robot-Inventor/)'s' ESLint config preset.
+[@Robot-Inventor](https://github.com/Robot-Inventor/)'s ESLint config preset.
 
 ## Installation
 
@@ -9,6 +9,8 @@ Until [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint
 ```ini
 legacy-peer-deps=true
 ```
+
+Then, install the package:
 
 ```bash
 npm install --save-dev @robot-inventor/eslint-config
@@ -68,10 +70,12 @@ export default [
 // CommonJS
 const { eslintConfig } = require("@robot-inventor/eslint-config");
 
-module.exports = {
+module.exports = [
     ...eslintConfig,
-    rules: {
-        // Your rules here
+    {
+        rules: {
+            // Your rules here
+        }
     }
-};
+];
 ```
