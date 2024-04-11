@@ -1,2 +1,77 @@
 # eslint-config
-My ESLint config preset
+
+[@Robot-Inventor](https://github.com/Robot-Inventor/)'s' ESLint config preset.
+
+## Installation
+
+Until [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) supports ESLint v9, you need to add the following code to your ``.npmrc`` before installing ``@robot-inventor/eslint-config``. If you didn't add it, you will get peer dependency warnings. See [this issue](https://github.com/typescript-eslint/typescript-eslint/issues/8211#issuecomment-2041466332) for more information.
+
+```ini
+legacy-peer-deps=true
+```
+
+```bash
+npm install --save-dev @robot-inventor/eslint-config
+```
+
+## Usage
+
+Add the following to your ``eslint.config.js`` file:
+
+```javascript
+// ESModule
+import { eslintConfig } from "@robot-inventor/eslint-config";
+
+export default eslintConfig;
+```
+
+```javascript
+// CommonJS
+const { eslintConfig } = require("@robot-inventor/eslint-config");
+
+module.exports = eslintConfig;
+```
+
+If you don't need JSDoc rules, you can use the ``eslintConfigNoJSDoc`` instead.
+
+```javascript
+// ESModule
+import { eslintConfigNoJSDoc } from "@robot-inventor/eslint-config";
+
+export default eslintConfigNoJSDoc;
+```
+
+```javascript
+// CommonJS
+const { eslintConfigNoJSDoc } = require("@robot-inventor/eslint-config");
+
+module.exports = eslintConfigNoJSDoc;
+```
+
+You can extend or override the config as needed.
+
+```javascript
+// ESModule
+import { eslintConfig } from "@robot-inventor/eslint-config";
+
+export default [
+    ...eslintConfig,
+    {
+        rules: {
+            // Your rules here
+        }
+    }
+];
+```
+
+```javascript
+// CommonJS
+const { eslintConfig } = require("@robot-inventor/eslint-config");
+
+module.exports = {
+    ...eslintConfig,
+    rules: {
+        // Your rules here
+    }
+};
+```
