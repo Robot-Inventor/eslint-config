@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 0.1.3
+
+### Patch Changes
+
+- [#18](https://github.com/Robot-Inventor/eslint-config/pull/18) [`737c44d`](https://github.com/Robot-Inventor/eslint-config/commit/737c44d95db2a2531945925d8dc430f19e816a0a) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency typescript-eslint to v7.9.0
+
 ## 0.1.2
 
 ### Patch Changes
