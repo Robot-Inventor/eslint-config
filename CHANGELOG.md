@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 0.2.5
+
+### Patch Changes
+
+- [#42](https://github.com/Robot-Inventor/eslint-config/pull/42) [`8efeb3e`](https://github.com/Robot-Inventor/eslint-config/commit/8efeb3ef39aa7925d3dfdee06e19fa529634be9c) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - chore: delete the `overrides` field in `package.json`
+
 ## 0.2.4
 
 ### Patch Changes
