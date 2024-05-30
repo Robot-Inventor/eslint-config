@@ -52,8 +52,5 @@
     "@changesets/cli": "^2.27.1",
     "tsconfig-to-dual-package": "^1.2.0",
     "typescript": "^5.4.4"
-  },
-  "overrides": {
-    "@types/eslint": "^8.56.10"
   }
 }
