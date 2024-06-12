@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 0.2.11
+
+### Patch Changes
+
+- [#56](https://github.com/Robot-Inventor/eslint-config/pull/56) [`981eceb`](https://github.com/Robot-Inventor/eslint-config/commit/981eceb9fcc44971b815f52e74b6cd9479388eb7) Thanks [@dependabot](https://github.com/apps/dependabot)! - chore(deps): bump braces from 3.0.2 to 3.0.3
+
 ## 0.2.10
 
 ### Patch Changes
