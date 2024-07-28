@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 0.2.24
+
+### Patch Changes
+
+- [#98](https://github.com/Robot-Inventor/eslint-config/pull/98) [`0fc0264`](https://github.com/Robot-Inventor/eslint-config/commit/0fc026474da8e5f68738608c9b9fc9f269f88e13) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint/js to v9.8.0
+
 ## 0.2.23
 
 ### Patch Changes
