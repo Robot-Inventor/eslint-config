@@ -3,15 +3,15 @@ import tseslint from "typescript-eslint";
 import jsdoc from "eslint-plugin-jsdoc";
 import eslintConfigPrettier from "eslint-config-prettier";
 
-const eslintConfigNoJSDoc = tseslint.config(
+const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
     eslint.configs.all,
     jsdoc.configs["flat/recommended-typescript-error"],
     eslintConfigPrettier,
-    ...tseslint.configs.recommendedTypeChecked,
+    ...tseslint.configs.strictTypeChecked,
     {
         languageOptions: {
             parserOptions: {
-                project: true
+                projectService: true
             }
         },
         plugins: {
@@ -96,6 +96,6 @@ const JSDocRule = tseslint.config({
     }
 });
 
-const eslintConfig = tseslint.config(...eslintConfigNoJSDoc, ...JSDocRule);
+const eslintConfig: ReturnType<typeof tseslint.config> = tseslint.config(...eslintConfigNoJSDoc, ...JSDocRule);
 
 export { eslintConfigNoJSDoc, eslintConfig };
