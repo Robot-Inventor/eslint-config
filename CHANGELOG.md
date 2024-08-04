@@ -1,5 +1,20 @@
 # @robot-inventor/eslint-config
 
+## 2.0.0
+
+### Major Changes
+
+- [#114](https://github.com/Robot-Inventor/eslint-config/pull/114) [`1770148`](https://github.com/Robot-Inventor/eslint-config/commit/1770148a60b38649bbb18a17f650dae2c6211b24) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add type import related rules
+
+  Add rules to enforce type imports in TypeScript files. This commit adds the following rules:
+
+  - `@typescript-eslint/consistent-type-imports`
+  - `@typescript-eslint/no-import-type-side-effects`
+
+### Patch Changes
+
+- [#112](https://github.com/Robot-Inventor/eslint-config/pull/112) [`18513b7`](https://github.com/Robot-Inventor/eslint-config/commit/18513b7feccc1ff5903ae7c1540ad160b070d3cf) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - docs: revert unnecessary changes in README
+
 ## 1.0.0
 
 ### Major Changes
