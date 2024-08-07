@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 3.0.0
+
+### Major Changes
+
+- [#120](https://github.com/Robot-Inventor/eslint-config/pull/120) [`daed3eb`](https://github.com/Robot-Inventor/eslint-config/commit/daed3eb07d7ef99d16801b816a06128aefcc4fad) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to v50
+
 ## 2.0.1
 
 ### Patch Changes
