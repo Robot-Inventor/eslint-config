@@ -1,5 +1,40 @@
 # @robot-inventor/eslint-config
 
+## 4.0.0
+
+### Major Changes
+
+- [#126](https://github.com/Robot-Inventor/eslint-config/pull/126) [`a77e4de`](https://github.com/Robot-Inventor/eslint-config/commit/a77e4def31b3c5fcaa83f9f5b5ae4789ebac7a11) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add some typescript-eslint rules
+
+  add following rules:
+
+  - `@typescript-eslint/consistent-type-exports`
+  - `@typescript-eslint/strict-boolean-expressions`
+  - `@typescript-eslint/switch-exhaustiveness-check`
+
+- [#129](https://github.com/Robot-Inventor/eslint-config/pull/129) [`31821f6`](https://github.com/Robot-Inventor/eslint-config/commit/31821f63670c3f8b9db07f8df8551811bedb8b77) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add typescript-eslint's stylistic-type-checked rules
+
+- [#127](https://github.com/Robot-Inventor/eslint-config/pull/127) [`099cdc0`](https://github.com/Robot-Inventor/eslint-config/commit/099cdc08957fea9de48e5fe4f3283a844778a71a) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add eslint-plugin-import-x
+
+  add following rules:
+
+  - `import-x/no-deprecated`
+  - `import-x/no-extraneous-dependencies`
+  - `import-x/no-absolute-path`
+  - `import-x/no-cycle`
+  - `import-x/no-self-import`
+  - `import-x/no-useless-path-segments`
+  - `import-x/exports-last`
+  - `import-x/first`
+  - `import-x/group-exports`
+  - `import-x/max-dependencies`
+  - `import-x/newline-after-import`
+  - `import-x/no-unassigned-import`
+
+### Patch Changes
+
+- [#124](https://github.com/Robot-Inventor/eslint-config/pull/124) [`f94c515`](https://github.com/Robot-Inventor/eslint-config/commit/f94c515ec69ecaa0b44f6df9edad3861e3d0af28) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to v50.0.1
+
 ## 3.0.1
 
 ### Patch Changes
