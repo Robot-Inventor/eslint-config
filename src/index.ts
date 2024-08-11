@@ -2,12 +2,18 @@ import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import jsdoc from "eslint-plugin-jsdoc";
 import eslintConfigPrettier from "eslint-config-prettier";
+import importX from "eslint-plugin-import-x";
+import { FlatCompat } from "@eslint/eslintrc";
+
+const compat = new FlatCompat();
 
 const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
     eslint.configs.all,
     jsdoc.configs["flat/recommended-typescript-error"],
     eslintConfigPrettier,
     ...tseslint.configs.strictTypeChecked,
+    ...compat.config(importX.configs.recommended),
+    importX.configs.typescript,
     {
         languageOptions: {
             parserOptions: {
@@ -78,7 +84,19 @@ const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
             "@typescript-eslint/no-import-type-side-effects": "error",
             "@typescript-eslint/consistent-type-exports": "error",
             "@typescript-eslint/strict-boolean-expressions": "error",
-            "@typescript-eslint/switch-exhaustiveness-check": "error"
+            "@typescript-eslint/switch-exhaustiveness-check": "error",
+            "import-x/no-deprecated": "error",
+            "import-x/no-extraneous-dependencies": "error",
+            "import-x/no-absolute-path": "error",
+            "import-x/no-cycle": "error",
+            "import-x/no-self-import": "error",
+            "import-x/no-useless-path-segments": "error",
+            "import-x/exports-last": "error",
+            "import-x/first": "error",
+            "import-x/group-exports": "error",
+            "import-x/max-dependencies": "error",
+            "import-x/newline-after-import": "error",
+            "import-x/no-unassigned-import": "error"
         }
     }
 );
