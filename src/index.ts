@@ -12,6 +12,7 @@ const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
     jsdoc.configs["flat/recommended-typescript-error"],
     eslintConfigPrettier,
     ...tseslint.configs.strictTypeChecked,
+    ...tseslint.configs.stylisticTypeChecked,
     ...compat.config(importX.configs.recommended),
     importX.configs.typescript,
     {
@@ -85,6 +86,12 @@ const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
             "@typescript-eslint/consistent-type-exports": "error",
             "@typescript-eslint/strict-boolean-expressions": "error",
             "@typescript-eslint/switch-exhaustiveness-check": "error",
+            "@typescript-eslint/array-type": [
+                "error",
+                {
+                    default: "array-simple"
+                }
+            ],
             "import-x/no-deprecated": "error",
             "import-x/no-extraneous-dependencies": "error",
             "import-x/no-absolute-path": "error",
