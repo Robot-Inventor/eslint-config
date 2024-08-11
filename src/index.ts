@@ -75,7 +75,10 @@ const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
             "@typescript-eslint/explicit-function-return-type": "error",
             "@typescript-eslint/explicit-member-accessibility": "error",
             "@typescript-eslint/consistent-type-imports": "error",
-            "@typescript-eslint/no-import-type-side-effects": "error"
+            "@typescript-eslint/no-import-type-side-effects": "error",
+            "@typescript-eslint/consistent-type-exports": "error",
+            "@typescript-eslint/strict-boolean-expressions": "error",
+            "@typescript-eslint/switch-exhaustiveness-check": "error"
         }
     }
 );
