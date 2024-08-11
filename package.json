@@ -40,16 +40,20 @@
     "provenance": true
   },
   "dependencies": {
+    "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.0.0",
     "@types/eslint__js": "^8.42.3",
     "@types/eslint-config-prettier": "^6.11.3",
+    "@typescript-eslint/parser": "^8.0.1",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import-x": "^3.1.0",
     "eslint-plugin-jsdoc": "^50.0.0",
     "typescript-eslint": "^8.0.0"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.1",
+    "@types/eslint__eslintrc": "^2.1.2",
     "tsconfig-to-dual-package": "^1.2.0",
     "typescript": "^5.4.4"
   }
