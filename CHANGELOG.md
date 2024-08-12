@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 4.0.4
+
+### Patch Changes
+
+- [#141](https://github.com/Robot-Inventor/eslint-config/pull/141) [`177ea5f`](https://github.com/Robot-Inventor/eslint-config/commit/177ea5ff64a52d27a4b88d57f3c0e47b9534648d) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: incorrect build artifacts for CommonJS
+
 ## 4.0.3
 
 ### Patch Changes
