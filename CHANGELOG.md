@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 4.0.6
+
+### Patch Changes
+
+- [#146](https://github.com/Robot-Inventor/eslint-config/pull/146) [`a77622d`](https://github.com/Robot-Inventor/eslint-config/commit/a77622d5136647e8bb8f819dfa90988a702cc172) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: remove `@typescript-eslint/strict-boolean-expressions` rule
+
 ## 4.0.5
 
 ### Patch Changes
