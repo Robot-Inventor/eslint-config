@@ -19,6 +19,7 @@
   },
   "scripts": {
     "build": "tsc -p . && tsc -p ./tsconfig.cjs.json && tsconfig-to-dual-package",
+    "lint": "npx eslint --flag unstable_ts_config ./src/**/*.ts",
     "ci:version": "changeset version",
     "ci:publish": "npm run build && changeset publish"
   },
@@ -57,7 +58,12 @@
     "@eslint-types/jsdoc": "^48.2.2",
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@types/eslint__eslintrc": "^2.1.2",
+    "eslint": "^9.9.0",
+    "jiti": "^1.21.6",
     "tsconfig-to-dual-package": "^1.2.0",
     "typescript": "^5.4.4"
+  },
+  "overrides": {
+    "eslint": "^9.9.0"
   }
 }

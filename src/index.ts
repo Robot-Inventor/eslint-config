@@ -1,13 +1,13 @@
-import eslint from "@eslint/js";
-import type { Linter } from "eslint";
+import { config, configs as tseslintConfigs } from "typescript-eslint";
 import type { ESLintRules } from "eslint/rules";
-import tseslint from "typescript-eslint";
-import jsdoc from "eslint-plugin-jsdoc";
+import { FlatCompat } from "@eslint/eslintrc";
+import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
+import type { Linter } from "eslint";
+import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
+import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import importX from "eslint-plugin-import-x";
-import { FlatCompat } from "@eslint/eslintrc";
-import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
-import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
+import jsdoc from "eslint-plugin-jsdoc";
 
 const compat = new FlatCompat();
 
@@ -38,7 +38,7 @@ const eslintRules = {
     "no-ternary": "off",
     "no-void": [
         "error",
-        // @ts-expect-error
+        // @ts-expect-error Type definitions are incorrect
         {
             allowAsStatement: true
         }
@@ -66,6 +66,7 @@ const eslintRules = {
 } as const satisfies Partial<ESLintRules>;
 
 type TSESLintRules = {
+    // eslint-disable-next-line no-magic-numbers
     [K in keyof TSESLintRuleOptions]?: Linter.RuleLevel | [Linter.RuleLevel, TSESLintRuleOptions[K][0]];
 };
 
@@ -88,6 +89,7 @@ const tseslintRules = {
 type ImportXRules = {
     [K in keyof typeof importX.rules as `import-x/${string & K}`]?:
         | Linter.RuleLevel
+        // eslint-disable-next-line no-magic-numbers
         | [Linter.RuleLevel, (typeof importX.rules)[K]["defaultOptions"][0]];
 };
 
@@ -107,6 +109,7 @@ const importXRules = {
 } as const satisfies ImportXRules;
 
 type JSDocRules = {
+    // eslint-disable-next-line no-magic-numbers
     [K in keyof JSDocRuleOptions]?: Linter.RuleLevel | [Linter.RuleLevel, JSDocRuleOptions[K][0]];
 };
 
@@ -126,12 +129,12 @@ const jsdocRules = {
     ]
 } as const satisfies Partial<JSDocRules>;
 
-const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
+const eslintConfigNoJSDoc = config(
     eslint.configs.all,
     jsdoc.configs["flat/recommended-typescript-error"],
     eslintConfigPrettier,
-    ...tseslint.configs.strictTypeChecked,
-    ...tseslint.configs.stylisticTypeChecked,
+    ...tseslintConfigs.strictTypeChecked,
+    ...tseslintConfigs.stylisticTypeChecked,
     ...compat.config(importX.configs.recommended),
     importX.configs.typescript,
     {
@@ -160,12 +163,12 @@ const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
     }
 );
 
-const JSDocRule = tseslint.config({
+const JSDocRule = config({
     rules: {
         ...jsdocRules
     }
 });
 
-const eslintConfig: ReturnType<typeof tseslint.config> = tseslint.config(...eslintConfigNoJSDoc, ...JSDocRule);
+const eslintConfig = config(...eslintConfigNoJSDoc, ...JSDocRule);
 
 export { eslintConfigNoJSDoc, eslintConfig };
