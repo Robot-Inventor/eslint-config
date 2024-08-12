@@ -1,5 +1,19 @@
 # @robot-inventor/eslint-config
 
+## 4.0.1
+
+### Patch Changes
+
+- [#133](https://github.com/Robot-Inventor/eslint-config/pull/133) [`3f82aa7`](https://github.com/Robot-Inventor/eslint-config/commit/3f82aa707390045ee3a3a4a9071f54dea1c2431d) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: add resolver for TypeScript
+
+- [#136](https://github.com/Robot-Inventor/eslint-config/pull/136) [`8344b8f`](https://github.com/Robot-Inventor/eslint-config/commit/8344b8f6dce28f0439cb5ef147fa325a7e01504b) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add linting for the config file
+
+- [#132](https://github.com/Robot-Inventor/eslint-config/pull/132) [`a72fbcc`](https://github.com/Robot-Inventor/eslint-config/commit/a72fbcc7b9525ba1adc43248867aa6a3912a617e) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: remove deprecated rule
+
+  remove following deprecated rule:
+
+  - [`quote-props`](https://eslint.org/docs/latest/rules/quote-props) (deprecated in v8.53.0)
+
 ## 4.0.0
 
 ### Major Changes
