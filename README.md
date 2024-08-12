@@ -4,12 +4,6 @@
 
 ## Installation
 
-Until [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) supports ESLint v9, you need to add the following code to your ``.npmrc`` before installing ``@robot-inventor/eslint-config``. If you didn't add it, you will get peer dependency warnings. See [this issue](https://github.com/typescript-eslint/typescript-eslint/issues/8211#issuecomment-2041466332) for more information.
-
-```ini
-legacy-peer-deps=true
-```
-
 Then, install the package:
 
 ```bash
