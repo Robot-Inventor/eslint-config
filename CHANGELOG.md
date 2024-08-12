@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 4.0.3
+
+### Patch Changes
+
+- [#139](https://github.com/Robot-Inventor/eslint-config/pull/139) [`628b17c`](https://github.com/Robot-Inventor/eslint-config/commit/628b17cc50818642ae407a57405a9c40299099c5) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: incorrect structure of build artifacts
+
 ## 4.0.2
 
 ### Patch Changes
