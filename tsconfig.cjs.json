@@ -1,6 +1,9 @@
 {
     "extends": "@robot-inventor/tsconfig-base/tsc.json",
     "compilerOptions": {
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
         "outDir": "./dist/cjs/",
     }
 }
