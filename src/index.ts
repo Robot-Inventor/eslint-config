@@ -146,6 +146,12 @@ const eslintConfigNoJSDoc: ReturnType<typeof tseslint.config> = tseslint.config(
         linterOptions: {
             reportUnusedDisableDirectives: "error"
         },
+        settings: {
+            "import-x/resolver": {
+                typescript: true,
+                node: true
+            }
+        },
         rules: {
             ...eslintRules,
             ...tseslintRules,
