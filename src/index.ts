@@ -1,11 +1,11 @@
 import eslint from "@eslint/js";
 import type { Linter } from "eslint";
+import type { ESLintRules } from "eslint/rules";
 import tseslint from "typescript-eslint";
 import jsdoc from "eslint-plugin-jsdoc";
 import eslintConfigPrettier from "eslint-config-prettier";
 import importX from "eslint-plugin-import-x";
 import { FlatCompat } from "@eslint/eslintrc";
-import type { Rules as ESLintRules } from "eslint-define-config";
 import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
 
@@ -38,6 +38,7 @@ const eslintRules = {
     "no-ternary": "off",
     "no-void": [
         "error",
+        // @ts-expect-error
         {
             allowAsStatement: true
         }
