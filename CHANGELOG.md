@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 4.0.5
+
+### Patch Changes
+
+- [#144](https://github.com/Robot-Inventor/eslint-config/pull/144) [`9eab1eb`](https://github.com/Robot-Inventor/eslint-config/commit/9eab1eb929bf24de0b46a91a878c32ab1562e383) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: make `overrides` field more strict
+
 ## 4.0.4
 
 ### Patch Changes
