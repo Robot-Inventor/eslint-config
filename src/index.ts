@@ -46,7 +46,6 @@ const eslintRules = {
     "object-curly-spacing": ["error", "always"],
     "one-var": ["error", "never"],
     "padded-blocks": ["error", "never"],
-    "quote-props": ["error", "consistent-as-needed"],
     "space-before-function-paren": [
         "error",
         {
