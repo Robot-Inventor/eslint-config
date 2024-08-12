@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 4.0.2
+
+### Patch Changes
+
+- [#137](https://github.com/Robot-Inventor/eslint-config/pull/137) [`8c0b655`](https://github.com/Robot-Inventor/eslint-config/commit/8c0b655c65c01815ab42e76b671defd60471278c) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - docs: remove obsolete instructions in the README
+
 ## 4.0.1
 
 ### Patch Changes
