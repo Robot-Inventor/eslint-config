@@ -12,23 +12,7 @@ import jsdoc from "eslint-plugin-jsdoc";
 const compat = new FlatCompat();
 
 const eslintRules = {
-    "array-element-newline": ["error", "consistent"],
     curly: ["error", "multi-line"],
-    "function-call-argument-newline": ["error", "consistent"],
-    "lines-between-class-members": [
-        "error",
-        "always",
-        {
-            exceptAfterSingleLine: true
-        }
-    ],
-    "max-len": [
-        "error",
-        {
-            code: 120
-        }
-    ],
-    "multiline-ternary": ["error", "always-multiline"],
     "no-magic-numbers": [
         "error",
         {
@@ -43,25 +27,8 @@ const eslintRules = {
             allowAsStatement: true
         }
     ],
-    "object-curly-spacing": ["error", "always"],
     "one-var": ["error", "never"],
-    "padded-blocks": ["error", "never"],
-    "space-before-function-paren": [
-        "error",
-        {
-            anonymous: "always",
-            asyncArrow: "always",
-            named: "never"
-        }
-    ],
     "no-plusplus": "off",
-    "no-extra-parens": [
-        "error",
-        "all",
-        {
-            nestedBinaryExpressions: false
-        }
-    ],
     "no-new": "off"
 } as const satisfies Partial<ESLintRules>;
 
