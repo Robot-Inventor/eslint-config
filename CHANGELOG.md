@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 4.0.7
+
+### Patch Changes
+
+- [#148](https://github.com/Robot-Inventor/eslint-config/pull/148) [`4d4d4c8`](https://github.com/Robot-Inventor/eslint-config/commit/4d4d4c8f912b97d08216a265a8cca993ab210bbb) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.1.0
+
 ## 4.0.6
 
 ### Patch Changes
