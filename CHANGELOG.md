@@ -1,5 +1,27 @@
 # @robot-inventor/eslint-config
 
+## 5.0.0
+
+### Major Changes
+
+- [#151](https://github.com/Robot-Inventor/eslint-config/pull/151) [`a0d9594`](https://github.com/Robot-Inventor/eslint-config/commit/a0d959424153f17c35a2ab4fe826f12d657420bc) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: remove deprecated ESLint rules
+
+  removed following deprecated ESLjson rules:
+
+  - `array-element-newline`
+  - `function-call-argument-newline`
+  - `lines-between-class-members`
+  - `max-len`
+  - `multiline-ternary`
+  - `no-extra-parens`
+  - `object-curly-spacing`
+  - `padded-blocks`
+  - `space-before-function-paren`
+
+### Patch Changes
+
+- [#150](https://github.com/Robot-Inventor/eslint-config/pull/150) [`2eb14fc`](https://github.com/Robot-Inventor/eslint-config/commit/2eb14fc42b3792b50d37c55bb775cefde5facf42) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to v50.1.0
+
 ## 4.0.7
 
 ### Patch Changes
