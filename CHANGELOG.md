@@ -1,5 +1,13 @@
 # @robot-inventor/eslint-config
 
+## 5.0.4
+
+### Patch Changes
+
+- [#160](https://github.com/Robot-Inventor/eslint-config/pull/160) [`0a673af`](https://github.com/Robot-Inventor/eslint-config/commit/0a673affe3b32c4376de05fdf7118526eb25092e) Thanks [@dependabot](https://github.com/apps/dependabot)! - chore(deps): bump micromatch from 4.0.5 to 4.0.8
+
+- [#159](https://github.com/Robot-Inventor/eslint-config/pull/159) [`18896c8`](https://github.com/Robot-Inventor/eslint-config/commit/18896c8f57dfffadc988aa5238984e5dfb3aba27) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.9.1
+
 ## 5.0.3
 
 ### Patch Changes
