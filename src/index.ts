@@ -22,7 +22,6 @@ const eslintRules = {
     "no-ternary": "off",
     "no-void": [
         "error",
-        // @ts-expect-error Type definitions are incorrect
         {
             allowAsStatement: true
         }
@@ -34,7 +33,7 @@ const eslintRules = {
 
 type TSESLintRules = {
     // eslint-disable-next-line no-magic-numbers
-    [K in keyof TSESLintRuleOptions]?: Linter.RuleLevel | [Linter.RuleLevel, TSESLintRuleOptions[K][0]];
+    [K in keyof TSESLintRuleOptions]?: Linter.RuleSeverity | [Linter.RuleSeverity, TSESLintRuleOptions[K][0]];
 };
 
 const tseslintRules = {
@@ -54,9 +53,9 @@ const tseslintRules = {
 
 type ImportXRules = {
     [K in keyof typeof importX.rules as `import-x/${string & K}`]?:
-        | Linter.RuleLevel
+        | Linter.RuleSeverity
         // eslint-disable-next-line no-magic-numbers
-        | [Linter.RuleLevel, (typeof importX.rules)[K]["defaultOptions"][0]];
+        | [Linter.RuleSeverity, (typeof importX.rules)[K]["defaultOptions"][0]];
 };
 
 const importXRules = {
@@ -76,7 +75,7 @@ const importXRules = {
 
 type JSDocRules = {
     // eslint-disable-next-line no-magic-numbers
-    [K in keyof JSDocRuleOptions]?: Linter.RuleLevel | [Linter.RuleLevel, JSDocRuleOptions[K][0]];
+    [K in keyof JSDocRuleOptions]?: Linter.RuleSeverity | [Linter.RuleSeverity, JSDocRuleOptions[K][0]];
 };
 
 const jsdocRules = {
