@@ -1,5 +1,13 @@
 # @robot-inventor/eslint-config
 
+## 5.0.5
+
+### Patch Changes
+
+- [#162](https://github.com/Robot-Inventor/eslint-config/pull/162) [`ac8ebd9`](https://github.com/Robot-Inventor/eslint-config/commit/ac8ebd9fb36a28547ab4628bb9504e45a83c205d) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-import-resolver-typescript to v3.6.3
+
+- [#164](https://github.com/Robot-Inventor/eslint-config/pull/164) [`c0229f4`](https://github.com/Robot-Inventor/eslint-config/commit/c0229f4c63b04c5f3377f9b3ea053812c93b41c3) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.3.0
+
 ## 5.0.4
 
 ### Patch Changes
