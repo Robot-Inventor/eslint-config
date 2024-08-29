@@ -66,11 +66,8 @@
     "typescript": "^5.4.4"
   },
   "overrides": {
-    "@typescript-eslint/utils": {
-      "eslint": "^9.9.0"
-    },
     "eslint-import-resolver-typescript": {
-      "eslint": "^9.9.0"
+      "eslint-plugin-import": "npm:eslint-plugin-import-x@^4.0.0"
     }
   }
 }

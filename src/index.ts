@@ -1,6 +1,5 @@
 import { config, configs as tseslintConfigs } from "typescript-eslint";
 import type { ESLintRules } from "eslint/rules";
-import { FlatCompat } from "@eslint/eslintrc";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
 import type { Linter } from "eslint";
 import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
@@ -8,8 +7,6 @@ import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import importX from "eslint-plugin-import-x";
 import jsdoc from "eslint-plugin-jsdoc";
-
-const compat = new FlatCompat();
 
 const eslintRules = {
     curly: ["error", "multi-line"],
@@ -100,8 +97,8 @@ const eslintConfigNoJSDoc = config(
     eslintConfigPrettier,
     ...tseslintConfigs.strictTypeChecked,
     ...tseslintConfigs.stylisticTypeChecked,
-    ...compat.config(importX.configs.recommended),
-    importX.configs.typescript,
+    importX.flatConfigs.recommended,
+    importX.flatConfigs.typescript,
     {
         languageOptions: {
             parserOptions: {
