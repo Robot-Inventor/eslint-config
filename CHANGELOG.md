@@ -1,5 +1,17 @@
 # @robot-inventor/eslint-config
 
+## 6.0.0
+
+### Major Changes
+
+- [#169](https://github.com/Robot-Inventor/eslint-config/pull/169) [`cc60690`](https://github.com/Robot-Inventor/eslint-config/commit/cc606909e8e741191b38153557d49ed1fba8e7d1) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: use flat config of `eslint-plugin-import-x` v4
+
+### Patch Changes
+
+- [#168](https://github.com/Robot-Inventor/eslint-config/pull/168) [`c2ad209`](https://github.com/Robot-Inventor/eslint-config/commit/c2ad2098e3be60a560cf2e7f7a52d982e3ece9e0) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-import-x to v4.1.0
+
+- [#166](https://github.com/Robot-Inventor/eslint-config/pull/166) [`4101b58`](https://github.com/Robot-Inventor/eslint-config/commit/4101b58e16c2ea81c1e51c5f08adfe52c8f87c35) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-import-x to v4
+
 ## 5.0.5
 
 ### Patch Changes
