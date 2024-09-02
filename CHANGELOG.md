@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 6.0.1
+
+### Patch Changes
+
+- [#170](https://github.com/Robot-Inventor/eslint-config/pull/170) [`aee6d93`](https://github.com/Robot-Inventor/eslint-config/commit/aee6d93cb4a47af046921695da477e3ba3a7b5ff) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-import-x to v4.1.1
+
 ## 6.0.0
 
 ### Major Changes
