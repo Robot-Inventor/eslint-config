@@ -1,5 +1,15 @@
 # @robot-inventor/eslint-config
 
+## 6.0.2
+
+### Patch Changes
+
+- [#172](https://github.com/Robot-Inventor/eslint-config/pull/172) [`a92f68e`](https://github.com/Robot-Inventor/eslint-config/commit/a92f68e38402b0e966e697cb96153131cab25f1b) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.4.0
+
+- [#174](https://github.com/Robot-Inventor/eslint-config/pull/174) [`59de485`](https://github.com/Robot-Inventor/eslint-config/commit/59de485e0173ca5de159fe7be8ea91a77b84d40c) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-import-x to v4.2.1
+
+- [#176](https://github.com/Robot-Inventor/eslint-config/pull/176) [`434f162`](https://github.com/Robot-Inventor/eslint-config/commit/434f1624ad381a88454623afa4b4bafaf0536d32) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.10.0
+
 ## 6.0.1
 
 ### Patch Changes
