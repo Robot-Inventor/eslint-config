@@ -61,7 +61,7 @@
     "@types/eslint": "^9.6.1",
     "@types/eslint__eslintrc": "^2.1.2",
     "eslint": "^9.9.0",
-    "jiti": "^1.21.6",
+    "jiti": "^2.0.0",
     "tsconfig-to-dual-package": "^1.2.0",
     "typescript": "^5.4.4"
   },
