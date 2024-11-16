@@ -1,5 +1,15 @@
 # @robot-inventor/eslint-config
 
+## 6.0.13
+
+### Patch Changes
+
+- [#220](https://github.com/Robot-Inventor/eslint-config/pull/220) [`ad21196`](https://github.com/Robot-Inventor/eslint-config/commit/ad21196c961fa4b287e39a8a4a1c399eb7c9b4ef) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to v50.5.0
+
+- [#221](https://github.com/Robot-Inventor/eslint-config/pull/221) [`ccb4fe2`](https://github.com/Robot-Inventor/eslint-config/commit/ccb4fe2e10fb728f1f246d43f0256edb2338ca61) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint/eslintrc to v3.2.0
+
+- [#223](https://github.com/Robot-Inventor/eslint-config/pull/223) [`0f2b598`](https://github.com/Robot-Inventor/eslint-config/commit/0f2b59805d61e38a7a92911901641ea2884c0d88) Thanks [@dependabot](https://github.com/apps/dependabot)! - chore(deps): bump @eslint/plugin-kit from 0.2.0 to 0.2.3
+
 ## 6.0.12
 
 ### Patch Changes
