@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 6.0.19
+
+### Patch Changes
+
+- [#249](https://github.com/Robot-Inventor/eslint-config/pull/249) [`1fd1f86`](https://github.com/Robot-Inventor/eslint-config/commit/1fd1f8691d79c9959ca80f070d7fdf70a6bd4c60) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.19.1
+
 ## 6.0.18
 
 ### Patch Changes
