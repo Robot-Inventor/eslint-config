@@ -1,5 +1,15 @@
 # @robot-inventor/eslint-config
 
+## 6.1.0
+
+### Minor Changes
+
+- [#252](https://github.com/Robot-Inventor/eslint-config/pull/252) [`4ab0a8d`](https://github.com/Robot-Inventor/eslint-config/commit/4ab0a8dcd88f9582813ca1db1b181c44f730c919) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add `eslintReactConfig` and `eslintReactConfigNoJSDoc`
+
+### Patch Changes
+
+- [#255](https://github.com/Robot-Inventor/eslint-config/pull/255) [`cc53094`](https://github.com/Robot-Inventor/eslint-config/commit/cc5309474351ea88c10b2251cd117ae38a14a5fb) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: move `eslint` and `eslint-plugin-react` from `devDependencies` to `dependencies`
+
 ## 6.0.19
 
 ### Patch Changes
