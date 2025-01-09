@@ -8,6 +8,7 @@ import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import importX from "eslint-plugin-import-x";
 import jsdoc from "eslint-plugin-jsdoc";
+import react from "eslint-plugin-react";
 
 const eslintRules = {
     curly: ["error", "multi-line"],
@@ -134,4 +135,31 @@ const JSDocRule = config({
 
 const eslintConfig = config(...eslintConfigNoJSDoc, ...JSDocRule);
 
-export { eslintConfigNoJSDoc, eslintConfig };
+const eslintReactConfigBase = config({
+    files: ["**/*.tsx"],
+    // @ts-expect-error `flat` always exists
+    ...react.configs.flat["recommended"],
+    rules: {
+        "jsdoc/check-tag-names": [
+            "error",
+            {
+                definedTags: ["jsxImportSource"]
+            }
+        ],
+        "react/self-closing-comp": [
+            "error",
+            {
+                component: true,
+                html: true
+            }
+        ],
+        "react/jsx-boolean-value": ["error", "never"],
+        "react/jsx-curly-brace-presence": ["error", "never"]
+    }
+});
+
+const eslintReactConfig = config(...eslintConfig, ...eslintReactConfigBase);
+
+const eslintReactConfigNoJSDoc = config(...eslintConfigNoJSDoc, ...eslintReactConfigBase);
+
+export { eslintConfigNoJSDoc, eslintConfig, eslintReactConfig, eslintReactConfigNoJSDoc };
