@@ -46,10 +46,12 @@
     "@types/eslint__js": "^8.42.3",
     "@types/eslint-config-prettier": "^6.11.3",
     "@typescript-eslint/parser": "^8.0.1",
+    "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import-x": "^4.0.0",
     "eslint-plugin-jsdoc": "^50.0.0",
+    "eslint-plugin-react": "^7.37.3",
     "typescript-eslint": "^8.0.0"
   },
   "devDependencies": {
@@ -60,8 +62,6 @@
     "@robot-inventor/tsconfig-base": "^4.0.0",
     "@types/eslint": "^9.6.1",
     "@types/eslint__eslintrc": "^2.1.2",
-    "eslint": "^9.9.0",
-    "eslint-plugin-react": "^7.37.3",
     "jiti": "^2.0.0",
     "tsconfig-to-dual-package": "^1.2.0",
     "typescript": "^5.4.4"
