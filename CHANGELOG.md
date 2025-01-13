@@ -1,5 +1,17 @@
 # @robot-inventor/eslint-config
 
+## 7.0.0
+
+### Major Changes
+
+- [#261](https://github.com/Robot-Inventor/eslint-config/pull/261) [`ed34ff2`](https://github.com/Robot-Inventor/eslint-config/commit/ed34ff2c46c5425d26da0be47517220ab1ab5396) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-config-prettier to v10
+
+### Patch Changes
+
+- [#258](https://github.com/Robot-Inventor/eslint-config/pull/258) [`10ab747`](https://github.com/Robot-Inventor/eslint-config/commit/10ab747924e81a768f624384f51fa258cf377888) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.18.0
+
+- [#259](https://github.com/Robot-Inventor/eslint-config/pull/259) [`918f926`](https://github.com/Robot-Inventor/eslint-config/commit/918f926bd521dd79cf96381000671407471cf4e4) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-react to v7.37.4
+
 ## 6.1.0
 
 ### Minor Changes
