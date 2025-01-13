@@ -19,7 +19,7 @@
   },
   "scripts": {
     "build": "tsc -p . && tsc -p ./tsconfig.cjs.json && tsconfig-to-dual-package",
-    "lint": "npx eslint --flag unstable_ts_config ./src/**/*.ts",
+    "lint": "npx eslint ./src/**/*.ts",
     "ci:version": "changeset version",
     "ci:publish": "npm run build && changeset publish"
   },
