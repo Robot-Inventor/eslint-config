@@ -137,7 +137,6 @@ const eslintConfig = config(...eslintConfigNoJSDoc, ...JSDocRule);
 
 const eslintReactConfigBase = config({
     files: ["**/*.tsx"],
-    // @ts-expect-error `flat` always exists
     ...react.configs.flat["recommended"],
     rules: {
         "jsdoc/check-tag-names": [
