@@ -142,6 +142,7 @@ const eslintReactConfigBase = config({
     files: ["**/*.tsx"],
     ...react.configs.flat["recommended"],
     plugins: {
+        ...react.configs.flat["recommended"]?.plugins,
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         "react-compiler": reactCompiler
     },
