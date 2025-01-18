@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 8.0.1
+
+### Patch Changes
+
+- [#268](https://github.com/Robot-Inventor/eslint-config/pull/268) [`915f9cb`](https://github.com/Robot-Inventor/eslint-config/commit/915f9cbd8a76476c1108d1dfcbdd7cd9a86be6c4) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: resolve errors when using `eslintReactConfig`
+
 ## 8.0.0
 
 ### Major Changes
