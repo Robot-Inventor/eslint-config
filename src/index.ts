@@ -9,6 +9,9 @@ import eslintConfigPrettier from "eslint-config-prettier";
 import importX from "eslint-plugin-import-x";
 import jsdoc from "eslint-plugin-jsdoc";
 import react from "eslint-plugin-react";
+// @ts-expect-error `eslint-plugin-react-compiler` doesn't have type definitions.
+// eslint-disable-next-line import-x/max-dependencies
+import reactCompiler from "eslint-plugin-react-compiler";
 
 const eslintRules = {
     curly: ["error", "multi-line"],
@@ -138,6 +141,10 @@ const eslintConfig = config(...eslintConfigNoJSDoc, ...JSDocRule);
 const eslintReactConfigBase = config({
     files: ["**/*.tsx"],
     ...react.configs.flat["recommended"],
+    plugins: {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+        "react-compiler": reactCompiler
+    },
     rules: {
         "jsdoc/check-tag-names": [
             "error",
@@ -153,7 +160,8 @@ const eslintReactConfigBase = config({
             }
         ],
         "react/jsx-boolean-value": ["error", "never"],
-        "react/jsx-curly-brace-presence": ["error", "never"]
+        "react/jsx-curly-brace-presence": ["error", "never"],
+        "react-compiler/react-compiler": "error"
     }
 });
 
