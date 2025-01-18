@@ -1,6 +1,6 @@
 {
   "name": "@robot-inventor/eslint-config",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "My ESLint config preset",
   "main": "dist/index.js",
   "type": "module",
