@@ -1,5 +1,17 @@
 # @robot-inventor/eslint-config
 
+## 8.0.0
+
+### Major Changes
+
+- [#265](https://github.com/Robot-Inventor/eslint-config/pull/265) [`58a49ca`](https://github.com/Robot-Inventor/eslint-config/commit/58a49caf37dc75f8c58715aad8345780efbb5d46) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add `eslint-plugin-react-compiler`
+
+### Patch Changes
+
+- [#264](https://github.com/Robot-Inventor/eslint-config/pull/264) [`97a52af`](https://github.com/Robot-Inventor/eslint-config/commit/97a52af8cade4a0af43d548ed28d4a3c0dc28151) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.20.0
+
+- [#266](https://github.com/Robot-Inventor/eslint-config/pull/266) [`47cc179`](https://github.com/Robot-Inventor/eslint-config/commit/47cc1792674753bf6d2bf506a5c2870aae1bee2f) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to v50.6.2
+
 ## 7.0.0
 
 ### Major Changes
