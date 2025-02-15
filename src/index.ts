@@ -4,7 +4,6 @@ import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types"
 import type { Linter } from "eslint";
 import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
 import eslint from "@eslint/js";
-// eslint-disable-next-line import-x/default
 import eslintConfigPrettier from "eslint-config-prettier";
 import importX from "eslint-plugin-import-x";
 import jsdoc from "eslint-plugin-jsdoc";
