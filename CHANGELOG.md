@@ -1,5 +1,19 @@
 # @robot-inventor/eslint-config
 
+## 8.0.5
+
+### Patch Changes
+
+- [#288](https://github.com/Robot-Inventor/eslint-config/pull/288) [`72c970a`](https://github.com/Robot-Inventor/eslint-config/commit/72c970ad43fce96cf85409d98a47fc5522635e9b) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint/eslintrc to v3.3.0
+
+- [#291](https://github.com/Robot-Inventor/eslint-config/pull/291) [`9361883`](https://github.com/Robot-Inventor/eslint-config/commit/93618832e850cc5a7b1b59c846322b6fbeb1691a) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - refactor: remove `@types/eslint__js` from dependencies
+
+- [#289](https://github.com/Robot-Inventor/eslint-config/pull/289) [`5680cc4`](https://github.com/Robot-Inventor/eslint-config/commit/5680cc47800557e6fd875752e92db5012523d1eb) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.21.0
+
+- [#285](https://github.com/Robot-Inventor/eslint-config/pull/285) [`c1bc249`](https://github.com/Robot-Inventor/eslint-config/commit/c1bc2492128873929c0219b9856f0c633570a6aa) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.24.1
+
+- [#284](https://github.com/Robot-Inventor/eslint-config/pull/284) [`ba260f8`](https://github.com/Robot-Inventor/eslint-config/commit/ba260f8678e91b67362f8139140ac40cd273ba06) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-import-resolver-typescript to v3.8.3
+
 ## 8.0.4
 
 ### Patch Changes
