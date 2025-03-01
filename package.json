@@ -61,7 +61,7 @@
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@robot-inventor/tsconfig-base": "^5.0.0",
     "@types/eslint": "^9.6.1",
-    "@types/eslint__eslintrc": "^2.1.2",
+    "@types/eslint__eslintrc": "^3.0.0",
     "jiti": "^2.0.0",
     "tsconfig-to-dual-package": "^1.2.0",
     "typescript": "^5.4.4"
