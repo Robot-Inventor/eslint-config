@@ -59,7 +59,7 @@
     "@changesets/cli": "^2.27.1",
     "@eslint-types/jsdoc": "^48.2.2",
     "@eslint-types/typescript-eslint": "^7.5.0",
-    "@robot-inventor/tsconfig-base": "^5.0.0",
+    "@robot-inventor/tsconfig-base": "^6.0.0",
     "@types/eslint": "^9.6.1",
     "@types/eslint__eslintrc": "^2.1.2",
     "jiti": "^2.0.0",
