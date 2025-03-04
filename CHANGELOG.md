@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 9.0.0
+
+### Major Changes
+
+- [#300](https://github.com/Robot-Inventor/eslint-config/pull/300) [`e5af9d5`](https://github.com/Robot-Inventor/eslint-config/commit/e5af9d58c637bc3e045ed5928505baa4eba68d98) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - chore: enforce use of `typescript-eslint` v8.26+ for TypeScript v5.8 support
+
 ## 8.0.7
 
 ### Patch Changes
