@@ -7,18 +7,8 @@
   "files": [
     "dist"
   ],
-  "exports": {
-    ".": {
-      "import": {
-        "default": "./dist/esm/index.js"
-      },
-      "require": {
-        "default": "./dist/cjs/index.js"
-      }
-    }
-  },
   "scripts": {
-    "build": "tsc -p . && tsc -p ./tsconfig.cjs.json && tsconfig-to-dual-package",
+    "build": "tsc",
     "lint": "npx eslint ./src/**/*.ts",
     "ci:version": "changeset version",
     "ci:publish": "npm run build && changeset publish"
@@ -63,7 +53,6 @@
     "@types/eslint": "^9.6.1",
     "@types/eslint__eslintrc": "^2.1.2",
     "jiti": "^2.0.0",
-    "tsconfig-to-dual-package": "^1.2.0",
     "typescript": "^5.4.4"
   },
   "overrides": {
