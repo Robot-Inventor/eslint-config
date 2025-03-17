@@ -1,4 +1,4 @@
-import { config, configs as tseslintConfigs } from "typescript-eslint";
+import { type ConfigArray, config, configs as tseslintConfigs } from "typescript-eslint";
 import type { ESLintRules } from "eslint/rules";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
 import type { Linter } from "eslint";
@@ -95,7 +95,7 @@ const jsdocRules = {
     ]
 } as const satisfies Partial<JSDocRules>;
 
-const eslintConfigNoJSDoc = config(
+const eslintConfigNoJSDoc: ConfigArray = config(
     eslint.configs.all,
     jsdoc.configs["flat/recommended-typescript-error"],
     eslintConfigPrettier,
@@ -129,15 +129,15 @@ const eslintConfigNoJSDoc = config(
     }
 );
 
-const JSDocRule = config({
+const JSDocRule: ConfigArray = config({
     rules: {
         ...jsdocRules
     }
 });
 
-const eslintConfig = config(...eslintConfigNoJSDoc, ...JSDocRule);
+const eslintConfig: ConfigArray = config(...eslintConfigNoJSDoc, ...JSDocRule);
 
-const eslintReactConfigBase = config({
+const eslintReactConfigBase: ConfigArray = config({
     files: ["**/*.tsx"],
     ...react.configs.flat["recommended"],
     plugins: {
@@ -165,8 +165,8 @@ const eslintReactConfigBase = config({
     }
 });
 
-const eslintReactConfig = config(...eslintConfig, ...eslintReactConfigBase);
+const eslintReactConfig: ConfigArray = config(...eslintConfig, ...eslintReactConfigBase);
 
-const eslintReactConfigNoJSDoc = config(...eslintConfigNoJSDoc, ...eslintReactConfigBase);
+const eslintReactConfigNoJSDoc: ConfigArray = config(...eslintConfigNoJSDoc, ...eslintReactConfigBase);
 
 export { eslintConfigNoJSDoc, eslintConfig, eslintReactConfig, eslintReactConfigNoJSDoc };
