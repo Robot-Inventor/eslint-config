@@ -8,7 +8,6 @@ import eslintConfigPrettier from "eslint-config-prettier";
 import importX from "eslint-plugin-import-x";
 import jsdoc from "eslint-plugin-jsdoc";
 import react from "eslint-plugin-react";
-// @ts-expect-error `eslint-plugin-react-compiler` doesn't have type definitions.
 // eslint-disable-next-line import-x/max-dependencies
 import reactCompiler from "eslint-plugin-react-compiler";
 
@@ -142,7 +141,6 @@ const eslintReactConfigBase: ConfigArray = config({
     ...react.configs.flat["recommended"],
     plugins: {
         ...react.configs.flat["recommended"]?.plugins,
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         "react-compiler": reactCompiler
     },
     rules: {
