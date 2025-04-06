@@ -1,5 +1,29 @@
 # @robot-inventor/eslint-config
 
+## 10.0.1
+
+### Patch Changes
+
+- [#318](https://github.com/Robot-Inventor/eslint-config/pull/318) [`800b686`](https://github.com/Robot-Inventor/eslint-config/commit/800b6861a0d1ee8b440c58f81fd9d234b334c78c) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to v8.29.0
+
+- [#317](https://github.com/Robot-Inventor/eslint-config/pull/317) [`1f40b38`](https://github.com/Robot-Inventor/eslint-config/commit/1f40b386a8e9e742e7f9d9ea1be306c99c501556) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-import-x to v4.10.0
+
+- [#321](https://github.com/Robot-Inventor/eslint-config/pull/321) [`0d69e25`](https://github.com/Robot-Inventor/eslint-config/commit/0d69e250ea55230eb077d9c01fef272e96359742) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to v50.6.9
+
+- [#320](https://github.com/Robot-Inventor/eslint-config/pull/320) [`fc6d3de`](https://github.com/Robot-Inventor/eslint-config/commit/fc6d3de86d4a431fc8664a32daad7abddf9f0b5b) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.23.0
+
+- [#327](https://github.com/Robot-Inventor/eslint-config/pull/327) [`c5dc2e8`](https://github.com/Robot-Inventor/eslint-config/commit/c5dc2e874121fbafd9ed67f2cb83aecdfa134bad) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-import-x to v4.10.1
+
+- [#322](https://github.com/Robot-Inventor/eslint-config/pull/322) [`b546e78`](https://github.com/Robot-Inventor/eslint-config/commit/b546e78a326fcd4eac707e4cf8d5abd3250dffde) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-react-compiler to v19.0.0-beta-e993439-20250328
+
+- [#316](https://github.com/Robot-Inventor/eslint-config/pull/316) [`5bf3886`](https://github.com/Robot-Inventor/eslint-config/commit/5bf3886a709bd56483061fab15a7d49f5441c25f) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-import-resolver-typescript to v4.3.1
+
+- [#319](https://github.com/Robot-Inventor/eslint-config/pull/319) [`c93a059`](https://github.com/Robot-Inventor/eslint-config/commit/c93a059a5341db7f4ab27232912b8616dd7bf536) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint/eslintrc to v3.3.1
+
+- [#324](https://github.com/Robot-Inventor/eslint-config/pull/324) [`c8fa739`](https://github.com/Robot-Inventor/eslint-config/commit/c8fa7392f66e000aeebfde94be9874752b5ac70c) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-react to v7.37.5
+
+- [#325](https://github.com/Robot-Inventor/eslint-config/pull/325) [`3a6fda5`](https://github.com/Robot-Inventor/eslint-config/commit/3a6fda5242b7cc02ec19ee30a8921d20ab5959b7) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to v9.24.0
+
 ## 10.0.0
 
 ### Major Changes
