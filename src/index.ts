@@ -1,11 +1,11 @@
 import { type ConfigArray, config, configs as tseslintConfigs } from "typescript-eslint";
+import { flatConfigs as importXFlatConfigs, type rules as importXRuleList } from "eslint-plugin-import-x";
 import type { ESLintRules } from "eslint/rules";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
 import type { Linter } from "eslint";
 import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
 import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
-import importX from "eslint-plugin-import-x";
 import jsdoc from "eslint-plugin-jsdoc";
 import react from "eslint-plugin-react";
 // eslint-disable-next-line import-x/max-dependencies
@@ -52,10 +52,10 @@ const tseslintRules = {
 } as const satisfies Partial<TSESLintRules>;
 
 type ImportXRules = {
-    [K in keyof typeof importX.rules as `import-x/${string & K}`]?:
+    [K in keyof typeof importXRuleList as `import-x/${string & K}`]?:
         | Linter.RuleSeverity
         // eslint-disable-next-line no-magic-numbers
-        | [Linter.RuleSeverity, (typeof importX.rules)[K]["defaultOptions"][0]];
+        | [Linter.RuleSeverity, (typeof importXRuleList)[K]["defaultOptions"][0]];
 };
 
 const importXRules = {
@@ -100,8 +100,8 @@ const eslintConfigNoJSDoc: ConfigArray = config(
     eslintConfigPrettier,
     ...tseslintConfigs.strictTypeChecked,
     ...tseslintConfigs.stylisticTypeChecked,
-    importX.flatConfigs.recommended,
-    importX.flatConfigs.typescript,
+    importXFlatConfigs.recommended,
+    importXFlatConfigs.typescript,
     {
         languageOptions: {
             parserOptions: {
