@@ -1,6 +1,6 @@
 import type { ESLintRules } from "eslint/rules";
 import { config } from "typescript-eslint";
-import { eslintConfig } from "./src/index.js";
+import { eslintConfig } from "./src/index.ts";
 
 const overrides = {
     rules: {
