@@ -1,5 +1,19 @@
 # @robot-inventor/eslint-config
 
+## 10.1.0
+
+### Minor Changes
+
+- [#328](https://github.com/Robot-Inventor/eslint-config/pull/328) [`186cae2`](https://github.com/Robot-Inventor/eslint-config/commit/186cae2eda289b0731a582a0f84cf558a6125109) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - chore: remove jiti from `devDependencies`
+
+  Removed jiti since ESLint can now read TypeScript config files without jiti.
+
+  Ref: https://github.com/eslint/eslint/pull/19401
+
+### Patch Changes
+
+- [#330](https://github.com/Robot-Inventor/eslint-config/pull/330) [`05fc84a`](https://github.com/Robot-Inventor/eslint-config/commit/05fc84aa3fc2ddc8ab3377644efc7d6c5f1243b0) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - refactor: use named import instead of default import
+
 ## 10.0.1
 
 ### Patch Changes
