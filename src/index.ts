@@ -1,4 +1,4 @@
-import { type ConfigArray, config, configs as tseslintConfigs } from "typescript-eslint";
+import { type ConfigArray, type ConfigWithExtends, config, configs as tseslintConfigs } from "typescript-eslint";
 import { flatConfigs as importXFlatConfigs, type rules as importXRuleList } from "eslint-plugin-import-x";
 import type { ESLintRules } from "eslint/rules";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
@@ -96,7 +96,7 @@ const jsdocRules = {
 
 const eslintConfigNoJSDoc: ConfigArray = config(
     eslint.configs.all,
-    jsdoc.configs["flat/recommended-typescript-error"],
+    jsdoc.configs["flat/recommended-typescript-error"] as ConfigWithExtends,
     eslintConfigPrettier,
     ...tseslintConfigs.strictTypeChecked,
     ...tseslintConfigs.stylisticTypeChecked,
@@ -128,7 +128,7 @@ const eslintConfigNoJSDoc: ConfigArray = config(
     }
 );
 
-const JSDocRule: ConfigArray = config({
+const JSDocRule = config({
     rules: {
         ...jsdocRules
     }
@@ -136,9 +136,9 @@ const JSDocRule: ConfigArray = config({
 
 const eslintConfig: ConfigArray = config(...eslintConfigNoJSDoc, ...JSDocRule);
 
-const eslintReactConfigBase: ConfigArray = config({
+const eslintReactConfigBase = config({
     files: ["**/*.tsx"],
-    ...react.configs.flat["recommended"],
+    ...(react.configs.flat["recommended"] as ConfigWithExtends),
     plugins: {
         ...react.configs.flat["recommended"]?.plugins,
         "react-compiler": reactCompiler
