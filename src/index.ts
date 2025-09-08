@@ -1,15 +1,16 @@
-import { type ConfigArray, type ConfigWithExtends, config, configs as tseslintConfigs } from "typescript-eslint";
 import { flatConfigs as importXFlatConfigs, type rules as importXRuleList } from "eslint-plugin-import-x";
 import type { ESLintRules } from "eslint/rules";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
 import type { Linter } from "eslint";
 import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
+import { defineConfig } from "eslint/config";
 import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import jsdoc from "eslint-plugin-jsdoc";
 import react from "eslint-plugin-react";
-// eslint-disable-next-line import-x/max-dependencies
 import reactCompiler from "eslint-plugin-react-compiler";
+// eslint-disable-next-line import-x/max-dependencies
+import { configs as tseslintConfigs } from "typescript-eslint";
 
 const eslintRules = {
     curly: ["error", "multi-line"],
@@ -94,9 +95,9 @@ const jsdocRules = {
     ]
 } as const satisfies Partial<JSDocRules>;
 
-const eslintConfigNoJSDoc: ConfigArray = config(
+const eslintConfigNoJSDoc = defineConfig(
     eslint.configs.all,
-    jsdoc.configs["flat/recommended-typescript-error"] as ConfigWithExtends,
+    jsdoc.configs["flat/recommended-typescript-error"],
     eslintConfigPrettier,
     ...tseslintConfigs.strictTypeChecked,
     ...tseslintConfigs.stylisticTypeChecked,
@@ -128,17 +129,17 @@ const eslintConfigNoJSDoc: ConfigArray = config(
     }
 );
 
-const JSDocRule = config({
+const JSDocRule = defineConfig({
     rules: {
         ...jsdocRules
     }
 });
 
-const eslintConfig: ConfigArray = config(...eslintConfigNoJSDoc, ...JSDocRule);
+const eslintConfig = defineConfig(...eslintConfigNoJSDoc, ...JSDocRule);
 
-const eslintReactConfigBase = config({
+const eslintReactConfigBase = defineConfig({
     files: ["**/*.tsx"],
-    ...(react.configs.flat["recommended"] as ConfigWithExtends),
+    ...react.configs.flat["recommended"],
     plugins: {
         ...react.configs.flat["recommended"]?.plugins,
         "react-compiler": reactCompiler
@@ -163,8 +164,8 @@ const eslintReactConfigBase = config({
     }
 });
 
-const eslintReactConfig: ConfigArray = config(...eslintConfig, ...eslintReactConfigBase);
+const eslintReactConfig = defineConfig(...eslintConfig, ...eslintReactConfigBase);
 
-const eslintReactConfigNoJSDoc: ConfigArray = config(...eslintConfigNoJSDoc, ...eslintReactConfigBase);
+const eslintReactConfigNoJSDoc = defineConfig(...eslintConfigNoJSDoc, ...eslintReactConfigBase);
 
 export { eslintConfigNoJSDoc, eslintConfig, eslintReactConfig, eslintReactConfigNoJSDoc };
