@@ -101,8 +101,10 @@ const eslintConfigNoJSDoc = defineConfig(
     eslintConfigPrettier,
     ...tseslintConfigs.strictTypeChecked,
     ...tseslintConfigs.stylisticTypeChecked,
-    importXFlatConfigs.recommended,
-    importXFlatConfigs.typescript,
+    ...(Array.isArray(importXFlatConfigs.recommended)
+        ? importXFlatConfigs.recommended
+        : [importXFlatConfigs.recommended]),
+    ...(Array.isArray(importXFlatConfigs.typescript) ? importXFlatConfigs.typescript : [importXFlatConfigs.typescript]),
     {
         languageOptions: {
             parserOptions: {
