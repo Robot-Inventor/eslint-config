@@ -51,7 +51,6 @@
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@robot-inventor/tsconfig-base": "^6.0.0",
     "@types/eslint": "^9.6.1",
-    "@types/eslint__eslintrc": "^2.1.2",
     "typescript": "^5.4.4"
   },
   "overrides": {
