@@ -48,10 +48,5 @@
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@robot-inventor/tsconfig-base": "^6.0.0",
     "typescript": "^5.4.4"
-  },
-  "overrides": {
-    "eslint-import-resolver-typescript": {
-      "eslint-plugin-import": "npm:eslint-plugin-import-x@^4.0.0"
-    }
   }
 }
