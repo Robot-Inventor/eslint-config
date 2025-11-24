@@ -39,6 +39,7 @@
     "eslint-plugin-jsdoc": "^61.0.0",
     "eslint-plugin-react": "^7.37.3",
     "eslint-plugin-react-compiler": "^19.0.0-beta-e552027-20250112",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "typescript-eslint": "^8.26.0"
   },
   "devDependencies": {
