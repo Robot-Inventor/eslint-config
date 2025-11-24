@@ -1,5 +1,19 @@
 # @robot-inventor/eslint-config
 
+## 11.0.1
+
+### Patch Changes
+
+- [#411](https://github.com/Robot-Inventor/eslint-config/pull/411) [`b113952`](https://github.com/Robot-Inventor/eslint-config/commit/b1139524d09bb4662f6e0f03b87fa1055888927d) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: address `zod-validation-error` related issues
+
+    Fixed the following error in `eslint-plugin-react-hooks`:
+
+    ```
+    Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: Package subpath './v4' is not defined by "exports" in /path/to/project/node_modules/zod-validation-error/package.json
+    ```
+
+    Ref: https://github.com/facebook/react/issues/35045
+
 ## 11.0.0
 
 ### Major Changes
