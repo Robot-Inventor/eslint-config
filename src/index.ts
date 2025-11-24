@@ -37,9 +37,9 @@ const eslintRules = {
 } as const satisfies Partial<ESLintRules>;
 
 type TSESLintRules = {
-  // eslint-disable-next-line no-magic-numbers
   [K in keyof TSESLintRuleOptions]?:
     | Linter.RuleSeverity
+    // eslint-disable-next-line no-magic-numbers
     | [Linter.RuleSeverity, TSESLintRuleOptions[K][0]];
 };
 
@@ -81,9 +81,9 @@ const importXRules = {
 } as const satisfies ImportXRules;
 
 type JSDocRules = {
-  // eslint-disable-next-line no-magic-numbers
   [K in keyof JSDocRuleOptions]?:
     | Linter.RuleSeverity
+    // eslint-disable-next-line no-magic-numbers
     | [Linter.RuleSeverity, JSDocRuleOptions[K][0]];
 };
 
