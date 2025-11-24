@@ -1,5 +1,17 @@
 # @robot-inventor/eslint-config
 
+## 11.0.0
+
+### Major Changes
+
+- [#409](https://github.com/Robot-Inventor/eslint-config/pull/409) [`0446215`](https://github.com/Robot-Inventor/eslint-config/commit/0446215e8ac25087f765ee9ceead34f00a2e02f0) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add eslint-plugin-react-hooks to `eslintReactConfig` and `eslintReactConfigNoJSDoc`
+
+### Patch Changes
+
+- [#404](https://github.com/Robot-Inventor/eslint-config/pull/404) [`d9b30ca`](https://github.com/Robot-Inventor/eslint-config/commit/d9b30ca2c3c82c538657f59a5e4b67fe283279d6) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript-eslint to v8.47.0
+
+- [#405](https://github.com/Robot-Inventor/eslint-config/pull/405) [`e773813`](https://github.com/Robot-Inventor/eslint-config/commit/e773813ce6aeb53136f82174057da3751af629de) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency eslint-plugin-jsdoc to v61.4.1
+
 ## 10.2.1
 
 ### Patch Changes
@@ -124,9 +136,9 @@
 
 - [#328](https://github.com/Robot-Inventor/eslint-config/pull/328) [`186cae2`](https://github.com/Robot-Inventor/eslint-config/commit/186cae2eda289b0731a582a0f84cf558a6125109) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - chore: remove jiti from `devDependencies`
 
-  Removed jiti since ESLint can now read TypeScript config files without jiti.
+    Removed jiti since ESLint can now read TypeScript config files without jiti.
 
-  Ref: https://github.com/eslint/eslint/pull/19401
+    Ref: https://github.com/eslint/eslint/pull/19401
 
 ### Patch Changes
 
@@ -506,17 +518,16 @@
 
 - [#151](https://github.com/Robot-Inventor/eslint-config/pull/151) [`a0d9594`](https://github.com/Robot-Inventor/eslint-config/commit/a0d959424153f17c35a2ab4fe826f12d657420bc) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: remove deprecated ESLint rules
 
-  removed following deprecated ESLjson rules:
-
-  - `array-element-newline`
-  - `function-call-argument-newline`
-  - `lines-between-class-members`
-  - `max-len`
-  - `multiline-ternary`
-  - `no-extra-parens`
-  - `object-curly-spacing`
-  - `padded-blocks`
-  - `space-before-function-paren`
+    removed following deprecated ESLjson rules:
+    - `array-element-newline`
+    - `function-call-argument-newline`
+    - `lines-between-class-members`
+    - `max-len`
+    - `multiline-ternary`
+    - `no-extra-parens`
+    - `object-curly-spacing`
+    - `padded-blocks`
+    - `space-before-function-paren`
 
 ### Patch Changes
 
@@ -568,9 +579,8 @@
 
 - [#132](https://github.com/Robot-Inventor/eslint-config/pull/132) [`a72fbcc`](https://github.com/Robot-Inventor/eslint-config/commit/a72fbcc7b9525ba1adc43248867aa6a3912a617e) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: remove deprecated rule
 
-  remove following deprecated rule:
-
-  - [`quote-props`](https://eslint.org/docs/latest/rules/quote-props) (deprecated in v8.53.0)
+    remove following deprecated rule:
+    - [`quote-props`](https://eslint.org/docs/latest/rules/quote-props) (deprecated in v8.53.0)
 
 ## 4.0.0
 
@@ -578,30 +588,28 @@
 
 - [#126](https://github.com/Robot-Inventor/eslint-config/pull/126) [`a77e4de`](https://github.com/Robot-Inventor/eslint-config/commit/a77e4def31b3c5fcaa83f9f5b5ae4789ebac7a11) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add some typescript-eslint rules
 
-  add following rules:
-
-  - `@typescript-eslint/consistent-type-exports`
-  - `@typescript-eslint/strict-boolean-expressions`
-  - `@typescript-eslint/switch-exhaustiveness-check`
+    add following rules:
+    - `@typescript-eslint/consistent-type-exports`
+    - `@typescript-eslint/strict-boolean-expressions`
+    - `@typescript-eslint/switch-exhaustiveness-check`
 
 - [#129](https://github.com/Robot-Inventor/eslint-config/pull/129) [`31821f6`](https://github.com/Robot-Inventor/eslint-config/commit/31821f63670c3f8b9db07f8df8551811bedb8b77) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add typescript-eslint's stylistic-type-checked rules
 
 - [#127](https://github.com/Robot-Inventor/eslint-config/pull/127) [`099cdc0`](https://github.com/Robot-Inventor/eslint-config/commit/099cdc08957fea9de48e5fe4f3283a844778a71a) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add eslint-plugin-import-x
 
-  add following rules:
-
-  - `import-x/no-deprecated`
-  - `import-x/no-extraneous-dependencies`
-  - `import-x/no-absolute-path`
-  - `import-x/no-cycle`
-  - `import-x/no-self-import`
-  - `import-x/no-useless-path-segments`
-  - `import-x/exports-last`
-  - `import-x/first`
-  - `import-x/group-exports`
-  - `import-x/max-dependencies`
-  - `import-x/newline-after-import`
-  - `import-x/no-unassigned-import`
+    add following rules:
+    - `import-x/no-deprecated`
+    - `import-x/no-extraneous-dependencies`
+    - `import-x/no-absolute-path`
+    - `import-x/no-cycle`
+    - `import-x/no-self-import`
+    - `import-x/no-useless-path-segments`
+    - `import-x/exports-last`
+    - `import-x/first`
+    - `import-x/group-exports`
+    - `import-x/max-dependencies`
+    - `import-x/newline-after-import`
+    - `import-x/no-unassigned-import`
 
 ### Patch Changes
 
@@ -633,10 +641,9 @@
 
 - [#114](https://github.com/Robot-Inventor/eslint-config/pull/114) [`1770148`](https://github.com/Robot-Inventor/eslint-config/commit/1770148a60b38649bbb18a17f650dae2c6211b24) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: add type import related rules
 
-  Add rules to enforce type imports in TypeScript files. This commit adds the following rules:
-
-  - `@typescript-eslint/consistent-type-imports`
-  - `@typescript-eslint/no-import-type-side-effects`
+    Add rules to enforce type imports in TypeScript files. This commit adds the following rules:
+    - `@typescript-eslint/consistent-type-imports`
+    - `@typescript-eslint/no-import-type-side-effects`
 
 ### Patch Changes
 
