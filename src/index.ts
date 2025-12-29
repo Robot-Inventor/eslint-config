@@ -1,9 +1,10 @@
+import { type Config, defineConfig } from "eslint/config";
 import { flatConfigs as importXFlatConfigs, type rules as importXRuleList } from "eslint-plugin-import-x";
+import { configs as nextEslintConfigs, rules as nextEslintRules } from "@next/eslint-plugin-next";
 import type { ESLintRules } from "eslint/rules";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
 import type { Linter } from "eslint";
 import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
-import { defineConfig } from "eslint/config";
 import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
 import jsdoc from "eslint-plugin-jsdoc";
@@ -172,7 +173,33 @@ const eslintReactConfigBase = defineConfig(reactHooks.configs.flat["recommended-
 });
 
 const eslintReactConfig = defineConfig(...eslintConfig, ...eslintReactConfigBase);
-
 const eslintReactConfigNoJSDoc = defineConfig(...eslintConfigNoJSDoc, ...eslintReactConfigBase);
 
-export { eslintConfigNoJSDoc, eslintConfig, eslintReactConfig, eslintReactConfigNoJSDoc };
+const nextPlugin = {
+    rules: nextEslintRules
+} as const satisfies NonNullable<Config["plugins"]>[string];
+
+const nextRules = {
+    ...nextEslintConfigs.recommended.rules,
+    ...nextEslintConfigs["core-web-vitals"].rules
+} as const satisfies Config["rules"];
+
+const eslintNextConfigBase = defineConfig({
+    // Ref: https://github.com/vercel/next.js/discussions/49337#discussioncomment-6009130
+    plugins: {
+        "@next/next": nextPlugin
+    },
+    rules: nextRules
+});
+
+const eslintNextConfig = defineConfig(...eslintReactConfig, ...eslintNextConfigBase);
+const eslintNextConfigNoJSDoc = defineConfig(...eslintReactConfigNoJSDoc, ...eslintNextConfigBase);
+
+export {
+    eslintConfigNoJSDoc,
+    eslintConfig,
+    eslintReactConfig,
+    eslintReactConfigNoJSDoc,
+    eslintNextConfig,
+    eslintNextConfigNoJSDoc
+};
