@@ -1,5 +1,13 @@
 # @robot-inventor/eslint-config
 
+## 11.1.1
+
+### Patch Changes
+
+- [#423](https://github.com/Robot-Inventor/eslint-config/pull/423) [`3de7bb4`](https://github.com/Robot-Inventor/eslint-config/commit/3de7bb491b6a1aeeafba80eeaa33417486e6e74b) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript-eslint to v8.51.0
+
+- [#424](https://github.com/Robot-Inventor/eslint-config/pull/424) [`a166ad4`](https://github.com/Robot-Inventor/eslint-config/commit/a166ad404aa7802a4b005d7d7272cae4bc98a4af) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: resolve error related to CommonJS import
+
 ## 11.1.0
 
 ### Minor Changes
