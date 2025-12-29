@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "lint": "eslint --flag unstable_native_nodejs_ts_config \"./src/**/*.ts\"",
+    "lint": "eslint \"./src/**/*.ts\"",
     "format": "prettier --write ./**/*.ts",
     "format:check": "prettier --check ./**/*.ts",
     "ci:version": "changeset version",
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "@eslint/js": "^9.0.0",
+    "@next/eslint-plugin-next": "^16.1.1",
     "eslint": "^9.17.0",
     "eslint-config-prettier": "^10.0.0",
     "eslint-import-resolver-typescript": "^4.0.0",
@@ -50,6 +51,7 @@
     "@eslint-types/jsdoc": "^48.2.2",
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@robot-inventor/tsconfig-base": "^6.0.0",
+    "jiti": "^2.6.1",
     "prettier": "^3.6.2",
     "typescript": "^5.4.4"
   },
