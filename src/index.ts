@@ -1,6 +1,6 @@
 import { type Config, defineConfig } from "eslint/config";
 import { flatConfigs as importXFlatConfigs, type rules as importXRuleList } from "eslint-plugin-import-x";
-import { configs as nextEslintConfigs, rules as nextEslintRules } from "@next/eslint-plugin-next";
+import $nextPlugin from "@next/eslint-plugin-next";
 import type { ESLintRules } from "eslint/rules";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
 import type { Linter } from "eslint";
@@ -174,6 +174,8 @@ const eslintReactConfigBase = defineConfig(reactHooks.configs.flat["recommended-
 
 const eslintReactConfig = defineConfig(...eslintConfig, ...eslintReactConfigBase);
 const eslintReactConfigNoJSDoc = defineConfig(...eslintConfigNoJSDoc, ...eslintReactConfigBase);
+
+const { configs: nextEslintConfigs, rules: nextEslintRules } = $nextPlugin;
 
 const nextPlugin = {
     rules: nextEslintRules
