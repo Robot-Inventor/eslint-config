@@ -50,7 +50,7 @@
     "@changesets/cli": "^2.27.1",
     "@eslint-types/jsdoc": "^48.2.2",
     "@eslint-types/typescript-eslint": "^7.5.0",
-    "@robot-inventor/tsconfig-base": "^6.0.0",
+    "@robot-inventor/tsconfig-base": "^7.0.0",
     "prettier": "^3.6.2",
     "typescript": "^5.4.4"
   },
