@@ -59,9 +59,7 @@ const tseslintRules = {
 type ImportXRules = {
     [K in keyof typeof importXRuleList as `import-x/${string & K}`]?:
         | Linter.RuleSeverity
-        | ((typeof importXRuleList)[K]["defaultOptions"] extends readonly [infer First, ...unknown[]]
-              ? [Linter.RuleSeverity, First]
-              : [Linter.RuleSeverity, unknown]);
+        | [Linter.RuleSeverity, unknown];
 };
 
 const importXRules = {
