@@ -59,8 +59,7 @@ const tseslintRules = {
 type ImportXRules = {
     [K in keyof typeof importXRuleList as `import-x/${string & K}`]?:
         | Linter.RuleSeverity
-        // eslint-disable-next-line no-magic-numbers
-        | [Linter.RuleSeverity, (typeof importXRuleList)[K]["defaultOptions"][0]];
+        | [Linter.RuleSeverity, unknown];
 };
 
 const importXRules = {
