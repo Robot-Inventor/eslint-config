@@ -1,5 +1,17 @@
 # @robot-inventor/eslint-config
 
+## 11.1.3
+
+### Patch Changes
+
+- [#434](https://github.com/Robot-Inventor/eslint-config/pull/434) [`4385ff7`](https://github.com/Robot-Inventor/eslint-config/commit/4385ff7bee6c0dda5aca38a6051d67a0dc96edb9) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency eslint-plugin-jsdoc to v62.5.4
+
+- [#435](https://github.com/Robot-Inventor/eslint-config/pull/435) [`f5b6ade`](https://github.com/Robot-Inventor/eslint-config/commit/f5b6adeffd3149d1db7bb8be7844907089a18591) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency @next/eslint-plugin-next to v16.1.6
+
+- [#436](https://github.com/Robot-Inventor/eslint-config/pull/436) [`fb4a97c`](https://github.com/Robot-Inventor/eslint-config/commit/fb4a97c558a614f89fffa8ee7cf6390e4d5df8c2) Thanks [@dependabot](https://github.com/apps/dependabot)! - chore(deps): bump @isaacs/brace-expansion from 5.0.0 to 5.0.1
+
+- [#428](https://github.com/Robot-Inventor/eslint-config/pull/428) [`66bc32c`](https://github.com/Robot-Inventor/eslint-config/commit/66bc32c181a1664b9e913dc56c21c0001f4cde96) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript-eslint to v8.54.0
+
 ## 11.1.2
 
 ### Patch Changes
