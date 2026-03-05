@@ -1,5 +1,23 @@
 # @robot-inventor/eslint-config
 
+## 11.1.5
+
+### Patch Changes
+
+- [#445](https://github.com/Robot-Inventor/eslint-config/pull/445) [`bec0bf4`](https://github.com/Robot-Inventor/eslint-config/commit/bec0bf4111d7c53167eb9b13a0d2c1a440f13aae) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency eslint-plugin-jsdoc to v62.6.0
+
+- [#448](https://github.com/Robot-Inventor/eslint-config/pull/448) [`cc22903`](https://github.com/Robot-Inventor/eslint-config/commit/cc22903e0e977e150775e7374f067cd474b7a098) Thanks [@dependabot](https://github.com/apps/dependabot)! - chore(deps): bump ajv from 6.12.6 to 6.14.0
+
+- [#443](https://github.com/Robot-Inventor/eslint-config/pull/443) [`3cf42d1`](https://github.com/Robot-Inventor/eslint-config/commit/3cf42d1d8d0af0f07c58cc8fa86801af7cda83ef) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript-eslint to v8.56.0
+
+- [#446](https://github.com/Robot-Inventor/eslint-config/pull/446) [`a65f8d8`](https://github.com/Robot-Inventor/eslint-config/commit/a65f8d88474a250c4ced6a439c38a96326214d0f) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency eslint-plugin-jsdoc to v62.7.1
+
+- [#447](https://github.com/Robot-Inventor/eslint-config/pull/447) [`1b19d9f`](https://github.com/Robot-Inventor/eslint-config/commit/1b19d9f4e5776f83fa9a0231e4cdf1421997a3c4) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update eslint monorepo to v9.39.3
+
+- [#455](https://github.com/Robot-Inventor/eslint-config/pull/455) [`3c72069`](https://github.com/Robot-Inventor/eslint-config/commit/3c720693e7b1d0fcac86c67361e717263e730b9f) Thanks [@dependabot](https://github.com/apps/dependabot)! - chore(deps): bump minimatch from 3.1.2 to 3.1.5
+
+- [#449](https://github.com/Robot-Inventor/eslint-config/pull/449) [`4e8d549`](https://github.com/Robot-Inventor/eslint-config/commit/4e8d5492e4863620b9e3c99bbd955bcedc62479b) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): update dependency typescript-eslint to v8.56.1
+
 ## 11.1.4
 
 ### Patch Changes
