@@ -34,9 +34,9 @@
   },
   "dependencies": {
     "@eslint/js": "^9.0.0",
-    "@next/eslint-plugin-next": "^16.1.1",
+    "@next/eslint-plugin-next": "^16.2.1",
     "eslint": "^9.17.0",
-    "eslint-config-prettier": "^10.0.0",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.0.0",
     "eslint-plugin-import-x": "^4.16.2",
     "eslint-plugin-jsdoc": "^62.0.0",
@@ -50,9 +50,9 @@
     "@changesets/cli": "^2.30.0",
     "@eslint-types/jsdoc": "^48.2.2",
     "@eslint-types/typescript-eslint": "^7.5.0",
-    "@robot-inventor/tsconfig-base": "^7.0.0",
+    "@robot-inventor/tsconfig-base": "^7.1.0",
     "prettier": "^3.6.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.9.3"
   },
   "overrides": {
     "zod-validation-error": "^5.0.0"
