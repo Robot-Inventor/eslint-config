@@ -52,7 +52,7 @@
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@robot-inventor/tsconfig-base": "^7.0.0",
     "prettier": "^3.6.2",
-    "typescript": "^5.4.4"
+    "typescript": "^5.9.3"
   },
   "overrides": {
     "zod-validation-error": "^5.0.0"
