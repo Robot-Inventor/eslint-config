@@ -1,5 +1,15 @@
 # @robot-inventor/eslint-config
 
+## 11.1.10
+
+### Patch Changes
+
+- [`bff08f6`](https://github.com/Robot-Inventor/eslint-config/commit/bff08f6166ae872e5d1930db7bbe7046d9fe5fa1) Thanks [@renovate[bot]](https://github.com/renovate%5Bbot%5D)! - fix(deps): update dependency @next/eslint-plugin-next to ^16.2.4
+
+- [`e529233`](https://github.com/Robot-Inventor/eslint-config/commit/e52923390ad8d8798c931924c105d7b2e4839ce3) Thanks [@renovate[bot]](https://github.com/renovate%5Bbot%5D)! - fix(deps): update dependency eslint-plugin-react-hooks to ^7.1.1
+
+- [#489](https://github.com/Robot-Inventor/eslint-config/pull/489) [`3493372`](https://github.com/Robot-Inventor/eslint-config/commit/3493372d8262bda3a0ebae87fbda5d190e5d0560) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency typescript-eslint to ^8.58.2
+
 ## 11.1.9
 
 ### Patch Changes
