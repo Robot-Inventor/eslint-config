@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.6.0",
-    "@changesets/cli": "^2.30.0",
+    "@changesets/cli": "^2.31.0",
     "@eslint-types/jsdoc": "^48.2.2",
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@robot-inventor/tsconfig-base": "^7.1.0",
