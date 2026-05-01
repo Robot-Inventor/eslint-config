@@ -1,5 +1,25 @@
 # @robot-inventor/eslint-config
 
+## 12.0.0
+
+### Major Changes
+
+- [#437](https://github.com/Robot-Inventor/eslint-config/pull/437) [`73949c0`](https://github.com/Robot-Inventor/eslint-config/commit/73949c043e0f08b027e3bd1e274907491997c767) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint/js to v10
+
+### Minor Changes
+
+- [#498](https://github.com/Robot-Inventor/eslint-config/pull/498) [`485037e`](https://github.com/Robot-Inventor/eslint-config/commit/485037ea22f2a13ca7b5e40297bcc895970dad6a) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: update ESLint to v10 and replace `eslint-plugin-react` with `@eslint-react/eslint-plugin`
+
+### Patch Changes
+
+- [#496](https://github.com/Robot-Inventor/eslint-config/pull/496) [`425e7ff`](https://github.com/Robot-Inventor/eslint-config/commit/425e7ff0700ae5a4839eaec0b58c2689b3093997) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency typescript-eslint to ^8.59.1
+
+- [#501](https://github.com/Robot-Inventor/eslint-config/pull/501) [`700c6a1`](https://github.com/Robot-Inventor/eslint-config/commit/700c6a14507963aaf96e6d4d928d028c6a8c0ef0) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint to ^10.3.0
+
+- [#499](https://github.com/Robot-Inventor/eslint-config/pull/499) [`b91a70b`](https://github.com/Robot-Inventor/eslint-config/commit/b91a70bd91579f1adfeefe6ef8cf296749ae4959) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - refactor: replace deprecated `tseslint.config()` with `defineConfig()`
+
+- [#502](https://github.com/Robot-Inventor/eslint-config/pull/502) [`fdfffd1`](https://github.com/Robot-Inventor/eslint-config/commit/fdfffd1bed3c368ee4cfd824513bd0d43ea0fdeb) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - docs: remove outdated information about using CommonJS from the README
+
 ## 11.1.10
 
 ### Patch Changes
