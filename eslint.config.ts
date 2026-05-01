@@ -1,5 +1,5 @@
 import type { ESLintRules } from "eslint/rules";
-import { config } from "typescript-eslint";
+import { defineConfig } from "eslint/config";
 import { eslintConfig } from "./src/index.ts";
 
 const overrides = {
@@ -8,4 +8,4 @@ const overrides = {
     }
 } as const satisfies { rules: Partial<ESLintRules> };
 
-export default config(...eslintConfig, overrides);
+export default defineConfig([...eslintConfig, overrides]);
