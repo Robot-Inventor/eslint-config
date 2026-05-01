@@ -1,16 +1,19 @@
 import { type Config, defineConfig } from "eslint/config";
+import eslintReactKit, { type RuleFunction } from "@eslint-react/kit";
 import { flatConfigs as importXFlatConfigs, type rules as importXRuleList } from "eslint-plugin-import-x";
 import $nextPlugin from "@next/eslint-plugin-next";
+import { AST_NODE_TYPES } from "@typescript-eslint/types";
 import type { ESLintRules } from "eslint/rules";
 import type { RuleOptions as JSDocRuleOptions } from "@eslint-types/jsdoc/types";
 import type { Linter } from "eslint";
 import type { RuleOptions as TSESLintRuleOptions } from "@eslint-types/typescript-eslint/types";
 import eslint from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
+import eslintReact from "@eslint-react/eslint-plugin";
 import jsdoc from "eslint-plugin-jsdoc";
-import react from "eslint-plugin-react";
 import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
+import stylistic from "@stylistic/eslint-plugin";
 // eslint-disable-next-line import-x/max-dependencies
 import { configs as tseslintConfigs } from "typescript-eslint";
 
@@ -144,11 +147,33 @@ const JSDocRule = defineConfig({
 
 const eslintConfig = defineConfig(...eslintConfigNoJSDoc, ...JSDocRule);
 
+const jsxBooleanValue =
+    (): RuleFunction =>
+    (context, { ast }) => ({
+        JSXAttribute(node): void {
+            const { value } = node;
+
+            // Guard: must have expression value
+            if (value?.type !== AST_NODE_TYPES.JSXExpressionContainer) return;
+
+            // Guard: must be literal true
+            const expression = ast.unwrap(value.expression);
+            if (expression.type !== AST_NODE_TYPES.Literal || expression.value !== true) return;
+
+            context.report({
+                node,
+                message: "Omit the value for boolean attributes.",
+                fix: (fixer) => fixer.removeRange([node.name.range[1], value.range[1]])
+            });
+        }
+    });
+
 const eslintReactConfigBase = defineConfig(reactHooks.configs.flat["recommended-latest"], {
-    files: ["**/*.tsx"],
-    ...react.configs.flat["recommended"],
+    files: ["**/*.ts", "**/*.tsx"],
+    extends: [eslintReact.configs.recommended, eslintReactKit().use(jsxBooleanValue).getConfig()],
     plugins: {
-        ...react.configs.flat["recommended"]?.plugins,
+        ...eslintReact.configs.recommended.plugins,
+        "@stylistic": stylistic,
         "react-compiler": reactCompiler
     },
     rules: {
@@ -158,15 +183,14 @@ const eslintReactConfigBase = defineConfig(reactHooks.configs.flat["recommended-
                 definedTags: ["jsxImportSource"]
             }
         ],
-        "react/self-closing-comp": [
+        "@stylistic/jsx-self-closing-comp": [
             "error",
             {
                 component: true,
                 html: true
             }
         ],
-        "react/jsx-boolean-value": ["error", "never"],
-        "react/jsx-curly-brace-presence": ["error", "never"],
+        "@stylistic/jsx-curly-brace-presence": ["error", "never"],
         "react-compiler/react-compiler": "error"
     }
 });
