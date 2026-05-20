@@ -1,5 +1,11 @@
 # @robot-inventor/eslint-config
 
+## 12.0.3
+
+### Patch Changes
+
+- [#518](https://github.com/Robot-Inventor/eslint-config/pull/518) [`df54904`](https://github.com/Robot-Inventor/eslint-config/commit/df5490430abb9287676793a14a9d318aae66000f) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - fix: add missing dependency `eslint-import-resolver-node`
+
 ## 12.0.2
 
 ### Patch Changes
