@@ -13,15 +13,9 @@ jobs:
         permissions:
             contents: read
 
-        strategy:
-            matrix:
-                node-version: [25.x]
-
         steps:
             - uses: actions/checkout@v6
-            - name: Use Node.js ${{ matrix.node-version }}
-              uses: actions/setup-node@v6
-              with:
-                  node-version: ${{ matrix.node-version }}
-            - run: npm ci
-            - run: npm run format:check
+            - uses: oven-sh/setup-bun@v2
+
+            - run: bun install --frozen-lockfile
+            - run: bun run format:check
