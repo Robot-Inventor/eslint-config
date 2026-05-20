@@ -1,0 +1,4 @@
+[install]
+# リリース後から2日以上経過したパッケージのみをインストールする
+# `minimumReleaseAge`の設定を変更する場合は`renovate.json`の`minimumReleaseAge`も変更する必要がある
+minimumReleaseAge = 172800

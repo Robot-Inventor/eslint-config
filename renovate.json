@@ -4,5 +4,7 @@
     "lockFileMaintenance": {
         "enabled": true
     },
-    "rangeStrategy": "bump"
+    "rangeStrategy": "bump",
+    "minimumReleaseAge": "2 days",
+    "minimumReleaseAgeBehaviour": "timestamp-optional"
 }
