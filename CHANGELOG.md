@@ -1,5 +1,27 @@
 # @robot-inventor/eslint-config
 
+## 12.0.6
+
+### Patch Changes
+
+- [#537](https://github.com/Robot-Inventor/eslint-config/pull/537) [`42a78a1`](https://github.com/Robot-Inventor/eslint-config/commit/42a78a18cc3d8fee2f68a664839bd0bf1e04ea95) Thanks [@renovate](https://github.com/apps/renovate)! - chore(deps): lock file maintenance
+
+- [#535](https://github.com/Robot-Inventor/eslint-config/pull/535) [`e1b4173`](https://github.com/Robot-Inventor/eslint-config/commit/e1b4173e88534e74db89b8c5234669e6b1d7237a) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update nextjs monorepo to ^16.2.7
+
+- [#539](https://github.com/Robot-Inventor/eslint-config/pull/539) [`3553504`](https://github.com/Robot-Inventor/eslint-config/commit/3553504d1969dc62ffbec0d7c78428bfd7d8016d) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update eslint monorepo to ^10.5.0
+
+- [#533](https://github.com/Robot-Inventor/eslint-config/pull/533) [`0d636d6`](https://github.com/Robot-Inventor/eslint-config/commit/0d636d6157463be6a145f414f86bf377206e146f) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to ^63.0.2
+
+- [#536](https://github.com/Robot-Inventor/eslint-config/pull/536) [`aea665e`](https://github.com/Robot-Inventor/eslint-config/commit/aea665e5dbb06bf91fc285fe101bffdc2805981b) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update typescript-eslint monorepo to ^8.61.1
+
+- [#532](https://github.com/Robot-Inventor/eslint-config/pull/532) [`69863dd`](https://github.com/Robot-Inventor/eslint-config/commit/69863ddc31f99cf410467a0d92d44d12e0145e75) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint-react/kit to ^5.9.0
+
+- [#534](https://github.com/Robot-Inventor/eslint-config/pull/534) [`a06e270`](https://github.com/Robot-Inventor/eslint-config/commit/a06e270251cc550c453e60ed51f7f7ae3b77653b) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-import-resolver-typescript to ^4.4.5
+
+- [#541](https://github.com/Robot-Inventor/eslint-config/pull/541) [`0957dfb`](https://github.com/Robot-Inventor/eslint-config/commit/0957dfbf266e3b080c5fb8dcdbfc024626438d9c) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to ^63.0.5
+
+- [#531](https://github.com/Robot-Inventor/eslint-config/pull/531) [`41a0f12`](https://github.com/Robot-Inventor/eslint-config/commit/41a0f12ad6839900dc21962185a631c386e63097) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint-react/eslint-plugin to ^5.9.0
+
 ## 12.0.5
 
 ### Patch Changes
