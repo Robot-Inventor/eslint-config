@@ -8,7 +8,7 @@
         "@eslint-react/eslint-plugin": "^5.8.7",
         "@eslint-react/kit": "^5.8.7",
         "@eslint/js": "^10.0.1",
-        "@next/eslint-plugin-next": "^16.2.6",
+        "@next/eslint-plugin-next": "^16.2.9",
         "@stylistic/eslint-plugin": "^5.10.0",
         "@typescript-eslint/types": "^8.60.0",
         "eslint": "^10.5.0",
@@ -198,7 +198,7 @@
 
     "@napi-rs/wasm-runtime": ["@napi-rs/wasm-runtime@1.1.4", "", { "dependencies": { "@tybys/wasm-util": "^0.10.1" }, "peerDependencies": { "@emnapi/core": "^1.7.1", "@emnapi/runtime": "^1.7.1" } }, "sha512-3NQNNgA1YSlJb/kMH1ildASP9HW7/7kYnRI2szWJaofaS1hWmbGI4H+d3+22aGzXXN9IJ+n+GiFVcGipJP18ow=="],
 
-    "@next/eslint-plugin-next": ["@next/eslint-plugin-next@16.2.6", "", { "dependencies": { "fast-glob": "3.3.1" } }, "sha512-Z8l6o4JWKUl755x4R+wogD86KPeU+Ckw4K+SYG4kHeOJtRenDeK+OSbGcqZpDtbwn9DsJVdir2UxmwXuinUbUw=="],
+    "@next/eslint-plugin-next": ["@next/eslint-plugin-next@16.2.9", "", { "dependencies": { "fast-glob": "3.3.1" } }, "sha512-UZi8+YT/MLgTC9nrrn2Xd4lBYv1B7lVmtWHfPcthAI5Tt/C1LuDe6DfmtCtJ+WQod3ksY4VrKSvk3oMVAnL7qw=="],
 
     "@nodelib/fs.scandir": ["@nodelib/fs.scandir@2.1.5", "", { "dependencies": { "@nodelib/fs.stat": "2.0.5", "run-parallel": "^1.1.9" } }, "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="],
 
