@@ -55,7 +55,7 @@
     "@eslint-types/jsdoc": "^48.2.2",
     "@eslint-types/typescript-eslint": "^7.5.0",
     "@robot-inventor/tsconfig-base": "^7.1.0",
-    "prettier": "^3.8.4",
+    "prettier": "^3.9.4",
     "typescript": "^6.0.3"
   },
   "overrides": {
