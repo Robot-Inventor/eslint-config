@@ -61,8 +61,7 @@ const tseslintRules = {
 
 type ImportXRules = {
     [K in keyof typeof importXRuleList as `import-x/${string & K}`]?:
-        | Linter.RuleSeverity
-        | [Linter.RuleSeverity, unknown];
+        Linter.RuleSeverity | [Linter.RuleSeverity, unknown];
 };
 
 const importXRules = {
