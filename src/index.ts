@@ -12,6 +12,7 @@ import eslintConfigPrettier from "eslint-config-prettier";
 import eslintReact from "@eslint-react/eslint-plugin";
 import jsdoc from "eslint-plugin-jsdoc";
 import reactCompiler from "eslint-plugin-react-compiler";
+import reactDoctor from "eslint-plugin-react-doctor";
 import reactHooks from "eslint-plugin-react-hooks";
 import stylistic from "@stylistic/eslint-plugin";
 // eslint-disable-next-line import-x/max-dependencies
@@ -167,32 +168,36 @@ const jsxBooleanValue =
         }
     });
 
-const eslintReactConfigBase = defineConfig(reactHooks.configs.flat["recommended-latest"], {
-    files: ["**/*.ts", "**/*.tsx"],
-    extends: [eslintReact.configs.recommended, eslintReactKit().use(jsxBooleanValue).getConfig()],
-    plugins: {
-        ...eslintReact.configs.recommended.plugins,
-        "@stylistic": stylistic,
-        "react-compiler": reactCompiler
+const eslintReactConfigBase = defineConfig(
+    reactHooks.configs.flat["recommended-latest"],
+    {
+        files: ["**/*.ts", "**/*.tsx"],
+        extends: [eslintReact.configs.recommended, eslintReactKit().use(jsxBooleanValue).getConfig()],
+        plugins: {
+            ...eslintReact.configs.recommended.plugins,
+            "@stylistic": stylistic,
+            "react-compiler": reactCompiler
+        },
+        rules: {
+            "jsdoc/check-tag-names": [
+                "error",
+                {
+                    definedTags: ["jsxImportSource"]
+                }
+            ],
+            "@stylistic/jsx-self-closing-comp": [
+                "error",
+                {
+                    component: true,
+                    html: true
+                }
+            ],
+            "@stylistic/jsx-curly-brace-presence": ["error", "never"],
+            "react-compiler/react-compiler": "error"
+        }
     },
-    rules: {
-        "jsdoc/check-tag-names": [
-            "error",
-            {
-                definedTags: ["jsxImportSource"]
-            }
-        ],
-        "@stylistic/jsx-self-closing-comp": [
-            "error",
-            {
-                component: true,
-                html: true
-            }
-        ],
-        "@stylistic/jsx-curly-brace-presence": ["error", "never"],
-        "react-compiler/react-compiler": "error"
-    }
-});
+    reactDoctor.configs.recommended
+);
 
 const eslintReactConfig = defineConfig(...eslintConfig, ...eslintReactConfigBase);
 const eslintReactConfigNoJSDoc = defineConfig(...eslintConfigNoJSDoc, ...eslintReactConfigBase);
@@ -208,13 +213,16 @@ const nextRules = {
     ...nextEslintConfigs["core-web-vitals"].rules
 } as const satisfies Config["rules"];
 
-const eslintNextConfigBase = defineConfig({
-    // Ref: https://github.com/vercel/next.js/discussions/49337#discussioncomment-6009130
-    plugins: {
-        "@next/next": nextPlugin
+const eslintNextConfigBase = defineConfig(
+    {
+        // Ref: https://github.com/vercel/next.js/discussions/49337#discussioncomment-6009130
+        plugins: {
+            "@next/next": nextPlugin
+        },
+        rules: nextRules
     },
-    rules: nextRules
-});
+    reactDoctor.configs.next
+);
 
 const eslintNextConfig = defineConfig(...eslintReactConfig, ...eslintNextConfigBase);
 const eslintNextConfigNoJSDoc = defineConfig(...eslintReactConfigNoJSDoc, ...eslintNextConfigBase);
