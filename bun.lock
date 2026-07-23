@@ -18,7 +18,7 @@
         "eslint-plugin-import-x": "^4.17.1",
         "eslint-plugin-jsdoc": "^63.0.13",
         "eslint-plugin-react-compiler": "^19.0.0-beta-ebf51a3-20250411",
-        "eslint-plugin-react-doctor": "^0.7.8",
+        "eslint-plugin-react-doctor": "^0.8.3",
         "eslint-plugin-react-hooks": "^7.1.1",
         "typescript-eslint": "^8.64.0",
       },
@@ -452,7 +452,7 @@
 
     "eslint-plugin-react-compiler": ["eslint-plugin-react-compiler@19.0.0-beta-ebf51a3-20250411", "", { "dependencies": { "@babel/core": "^7.24.4", "@babel/parser": "^7.24.4", "@babel/plugin-proposal-private-methods": "^7.18.6", "hermes-parser": "^0.25.1", "zod": "^3.22.4", "zod-validation-error": "^3.0.3" }, "peerDependencies": { "eslint": ">=7" } }, "sha512-R7ncuwbCPFAoeMlS56DGGSJFxmRtlWafYH/iWyep5Ks0RaPqTCL4k5gA87axUBBcITsaIgUGkbqAxDxl8Xfm5A=="],
 
-    "eslint-plugin-react-doctor": ["eslint-plugin-react-doctor@0.7.8", "", { "dependencies": { "oxlint-plugin-react-doctor": "0.7.8" } }, "sha512-SgRYQ/I6YMDBaEd97+r5ufrPU3GmmrEee17ZcOCzZmfqos6uodVwVQYHrzX4LQAzVVRbS6QIQgZrFhMn7m6mPg=="],
+    "eslint-plugin-react-doctor": ["eslint-plugin-react-doctor@0.8.3", "", { "dependencies": { "oxlint-plugin-react-doctor": "0.8.3" } }, "sha512-ad4wfp12Pf9B5v/mTHZy7sY5nXAbIzO3TMn6ZRvj93JQXu02oNuZxmomYooHrQcWoI6wCZtMI1U/1rV6D8yTkw=="],
 
     "eslint-plugin-react-dom": ["eslint-plugin-react-dom@5.14.10", "", { "dependencies": { "@eslint-react/ast": "5.14.10", "@eslint-react/eslint": "5.14.10", "@eslint-react/jsx": "5.14.10", "@eslint-react/shared": "5.14.10", "@typescript-eslint/types": "^8.63.0", "@typescript-eslint/utils": "^8.63.0", "compare-versions": "^6.1.1" }, "peerDependencies": { "eslint": "*", "typescript": "*" } }, "sha512-nsjlG9W0fAZjJyc1GnpnR3JqCAzq+yzwqQkQ0vgDfVUEr/jZrpnSq+ZzRuXU7uUBp1dLiwliHtu510uH1p54VA=="],
 
@@ -698,7 +698,7 @@
 
     "oxc-parser": ["oxc-parser@0.138.0", "", { "dependencies": { "@oxc-project/types": "^0.138.0" }, "optionalDependencies": { "@oxc-parser/binding-android-arm-eabi": "0.138.0", "@oxc-parser/binding-android-arm64": "0.138.0", "@oxc-parser/binding-darwin-arm64": "0.138.0", "@oxc-parser/binding-darwin-x64": "0.138.0", "@oxc-parser/binding-freebsd-x64": "0.138.0", "@oxc-parser/binding-linux-arm-gnueabihf": "0.138.0", "@oxc-parser/binding-linux-arm-musleabihf": "0.138.0", "@oxc-parser/binding-linux-arm64-gnu": "0.138.0", "@oxc-parser/binding-linux-arm64-musl": "0.138.0", "@oxc-parser/binding-linux-ppc64-gnu": "0.138.0", "@oxc-parser/binding-linux-riscv64-gnu": "0.138.0", "@oxc-parser/binding-linux-riscv64-musl": "0.138.0", "@oxc-parser/binding-linux-s390x-gnu": "0.138.0", "@oxc-parser/binding-linux-x64-gnu": "0.138.0", "@oxc-parser/binding-linux-x64-musl": "0.138.0", "@oxc-parser/binding-openharmony-arm64": "0.138.0", "@oxc-parser/binding-wasm32-wasi": "0.138.0", "@oxc-parser/binding-win32-arm64-msvc": "0.138.0", "@oxc-parser/binding-win32-ia32-msvc": "0.138.0", "@oxc-parser/binding-win32-x64-msvc": "0.138.0" } }, "sha512-c25lvfpZ2+WY1yk6NkP0X0RTQg0ZxgSVaZHDa7lt6fEe1jwZjPWkRWvTyZ1xyaM7roVJMdtRCfbhUj/d4ims3Q=="],
 
-    "oxlint-plugin-react-doctor": ["oxlint-plugin-react-doctor@0.7.8", "", { "dependencies": { "@typescript-eslint/types": "^8.59.3", "eslint-scope": "^9.1.2", "eslint-visitor-keys": "^5.0.1", "oxc-parser": "^0.138.0" } }, "sha512-3f9/jFLIC/KRLPYqxiXSk20cq47luGy9Oz5Ru7nK7w0EI9B9zuMvAU92bK9jFiwFE7Lc9PA8ER6Y+naYaGFQGw=="],
+    "oxlint-plugin-react-doctor": ["oxlint-plugin-react-doctor@0.8.3", "", { "dependencies": { "@typescript-eslint/types": "^8.59.3", "eslint-scope": "^9.1.2", "eslint-visitor-keys": "^5.0.1", "oxc-parser": "^0.138.0" } }, "sha512-S1Gq1H9+BpziApWcZ/sWPNYYy1FMkFmtSEGiqIJ4/Aac76LfkeutPFtSRlkJF1JlcrbYFf7LXcfcxZCJgmVBBQ=="],
 
     "p-filter": ["p-filter@2.1.0", "", { "dependencies": { "p-map": "^2.0.0" } }, "sha512-ZBxxZ5sL2HghephhpGAQdoskxplTwr7ICaehZwLIlfL6acuVgZPm8yBNuRAFBGEqtD/hmUeq9eqLg2ys9Xr/yw=="],
 
