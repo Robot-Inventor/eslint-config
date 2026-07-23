@@ -34,7 +34,7 @@
     },
   },
   "overrides": {
-    "@typescript-eslint/types": "8.64.0",
+    "@typescript-eslint/types": "^8.64.0",
     "zod-validation-error": "^5.0.0",
   },
   "packages": {
