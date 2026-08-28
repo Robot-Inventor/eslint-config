@@ -196,7 +196,14 @@ const eslintReactConfigBase = defineConfig(
             "react-compiler/react-compiler": "error"
         }
     },
-    reactDoctor.configs.recommended
+    reactDoctor.configs.recommended,
+    {
+        settings: {
+            "react-doctor": {
+                capabilities: ["react-compiler"]
+            }
+        }
+    }
 );
 
 const eslintReactConfig = defineConfig(...eslintConfig, ...eslintReactConfigBase);
