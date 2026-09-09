@@ -27,7 +27,7 @@
         "@changesets/cli": "^3.0.1",
         "@eslint-types/jsdoc": "^48.2.2",
         "@eslint-types/typescript-eslint": "^7.5.0",
-        "@robot-inventor/tsconfig-base": "^7.1.0",
+        "@robot-inventor/tsconfig-base": "^7.2.0",
         "prettier": "^3.9.6",
         "typescript": "^6.0.3",
       },
@@ -256,7 +256,7 @@
 
     "@pnpm/deps.graph-sequencer": ["@pnpm/deps.graph-sequencer@1100.0.1", "", {}, "sha512-pOr5+q1fLYKwFN3LAJuGZEnfXDcQ73zqgDHMtGy+K+uIoUqyY+6MeDCWFwfu+4EFuq76I5EPFofoNAI+Bmmq4A=="],
 
-    "@robot-inventor/tsconfig-base": ["@robot-inventor/tsconfig-base@7.1.0", "", {}, "sha512-cEsDyPJ2+FQN6OmNTVjktmJbsfjTwsja+ny44g/1I8iWSbpfy4h56Js7c90GFOODQZcO6r9vDQok0IX3oTMEgA=="],
+    "@robot-inventor/tsconfig-base": ["@robot-inventor/tsconfig-base@7.2.0", "", {}, "sha512-M3kXeBVcuS7QDrCva77iIlQ4MRG7Y2EnagnmJUj00cRuzlu0Qq++EZZpA7ySMJyyBZvLWfmwl2zVNh0/ANSabA=="],
 
     "@shaderfrog/glsl-parser": ["@shaderfrog/glsl-parser@7.0.1", "", {}, "sha512-8mpfsoPeRhesY3pOrzNZBL8uG6N5GVX1EHLBYbd4gzKs+c7vaEIqpTNK5VrffU33qQN4cwpP2v3u4aPPBU32sw=="],
 
