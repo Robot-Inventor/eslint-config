@@ -1,5 +1,25 @@
 # @robot-inventor/eslint-config
 
+## 14.0.0
+
+### Major Changes
+
+- [#628](https://github.com/Robot-Inventor/eslint-config/pull/628) [`ab6e4a3`](https://github.com/Robot-Inventor/eslint-config/commit/ab6e4a360a9b726d4da0dfb54c2b1a377165ead4) Thanks [@Robot-Inventor](https://github.com/Robot-Inventor)! - feat: deprecate the package
+
+### Patch Changes
+
+- [#626](https://github.com/Robot-Inventor/eslint-config/pull/626) [`4cf3a3d`](https://github.com/Robot-Inventor/eslint-config/commit/4cf3a3ddaa3ac24c75d02b6179f612594563d3e5) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-react-doctor to ^0.9.14
+
+- [#615](https://github.com/Robot-Inventor/eslint-config/pull/615) [`6a9c780`](https://github.com/Robot-Inventor/eslint-config/commit/6a9c780d26f8d831c83eb8e39d37ed6254eef923) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint-plugin-jsdoc to ^64.3.10
+
+- [#621](https://github.com/Robot-Inventor/eslint-config/pull/621) [`0a35c7b`](https://github.com/Robot-Inventor/eslint-config/commit/0a35c7b687100ea1bcb037e3b477a20be514ff40) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint-react/kit to ^5.19.0
+
+- [#618](https://github.com/Robot-Inventor/eslint-config/pull/618) [`cec67d3`](https://github.com/Robot-Inventor/eslint-config/commit/cec67d3e6992bbd021f4dc17b1c9ca14a702d57a) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency eslint to ^10.10.0
+
+- [#625](https://github.com/Robot-Inventor/eslint-config/pull/625) [`88d5e4f`](https://github.com/Robot-Inventor/eslint-config/commit/88d5e4fecd939bfd1b92d681dc4387fe890bd6cc) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @next/eslint-plugin-next to ^16.3.5
+
+- [#620](https://github.com/Robot-Inventor/eslint-config/pull/620) [`0853fbe`](https://github.com/Robot-Inventor/eslint-config/commit/0853fbe101a479dd1cb7338bcee1e24f49b61907) Thanks [@renovate](https://github.com/apps/renovate)! - fix(deps): update dependency @eslint-react/eslint-plugin to ^5.19.0
+
 ## 13.1.1
 
 ### Patch Changes
