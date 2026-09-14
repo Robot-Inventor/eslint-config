@@ -1,6 +1,9 @@
 # eslint-config
 
-[@Robot-Inventor](https://github.com/Robot-Inventor/)'s ESLint config preset. This package is deprecated. Please use [@robot-inventor/oxlint-config](https://github.com/Robot-Inventor/oxlint-config/) instead.
+> [!IMPORTANT]
+> This package is deprecated. Please use [@robot-inventor/oxlint-config](https://github.com/Robot-Inventor/oxlint-config/) instead.
+
+[@Robot-Inventor](https://github.com/Robot-Inventor/)'s ESLint config preset.
 
 ## Installation
 
